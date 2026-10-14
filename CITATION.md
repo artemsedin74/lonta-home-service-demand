@@ -10,7 +10,7 @@ and Lonta for the original cross-tabulations, comparisons and figures. The archi
 DOI identifies the input copy, not a DOI or endorsement of this Lonta report.
 
 When reusing a number, keep its service category, denominator, preceding 24-month
-window,2023 interview vintage, uncertainty and professional-work definition.
+window, 2023 interview vintage, uncertainty and professional-work definition.
 A project spending quartile is not a confidence interval. A count/spending share
 comparison is not a causal effect or a 2026 price/revenue forecast.
 

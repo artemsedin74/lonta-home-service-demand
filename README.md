@@ -1,5 +1,8 @@
 # Lonta Home-Service Demand Study — v1.0
 
+For external reporting, start with the [editorial assets](editorial/README.md):
+three source angles, figure captions, alt text and exact claim-to-data references.
+
 Canonical report: https://lonta.io/research/home-service-demand/
 Prepared October 12, 2026. Original secondary analysis of the 2023 American Housing Survey,
 using the actual DataLumos 217661/V2 archival edition: https://doi.org/10.3886/E217661V2.

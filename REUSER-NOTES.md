@@ -41,7 +41,7 @@ The input is the 2023 AHS occupied-owner sample, actual DataLumos 217661/V2 copy
 covering projects in the preceding 24 months at interview. This is not calendar-year
 2023 alone. JOBDIY 2 means most work was performed outside the household, not
 verified paid invoices or verification of licensing. Values are nominal reported
-outlays, not contractor profit.160 Fay BRR replicates give pointwise 90% intervals;
+outlays, not contractor profit. 160 Fay BRR replicates give pointwise 90% intervals;
 there is no multiple-comparison adjustment. Original Census-origin binary equality
 is unverified. The source-only companion does not contain raw rows or IDs.
 
