@@ -1,0 +1,2315 @@
+{
+  "checkedAtUtc": "2026-10-12T20:21:06.097380+00:00",
+  "sourceUrl": "https://www2.census.gov/programs-surveys/ahs/2023/AHS%202023%20Table%20Specifications%20and%20PUF%20Estimates%20for%20User%20Verification.xlsx",
+  "sourceRepresentation": "Primary workbook parsed by document reader, not downloaded original XLSX bytes",
+  "sourceTextSha256": "f8a2f4f6b27c166576e1a04923ca78c5d4c4da465c29bd9f2ed527c2481de2a7",
+  "archiveSha256": "7133398b063a9c23e268212efc5b46c5d8ff1b36cc0a4b747557da0f052b6b01",
+  "controlScope": "C-01 occupied count/MOE, C-15 owner count/MOE, all C-16 PUF count/positive-cost median/positive-cost mean/spending rows plus project-count MOEs",
+  "comparisons": 183,
+  "passed": 183,
+  "failed": 0,
+  "checks": [
+    {
+      "label": "C-01 occupied total",
+      "metric": "housing_units_thousands",
+      "actual": 133231,
+      "puf_target": 133231.0,
+      "pass_check": true
+    },
+    {
+      "label": "C-01 occupied total",
+      "metric": "moe90_thousands",
+      "actual": 381,
+      "puf_target": 381.0,
+      "pass_check": true
+    },
+    {
+      "label": "C-15 owner total",
+      "metric": "housing_units_thousands",
+      "actual": 86853,
+      "puf_target": 86853.0,
+      "pass_check": true
+    },
+    {
+      "label": "C-15 owner total",
+      "metric": "moe90_thousands",
+      "actual": 645,
+      "puf_target": 645.0,
+      "pass_check": true
+    },
+    {
+      "label": "Total",
+      "metric": "project_count_moe90_thousands",
+      "actual": 2602,
+      "puf_target": 2602.0,
+      "pass_check": true
+    },
+    {
+      "label": "Total",
+      "metric": "project_count_thousands",
+      "codes": "ALL",
+      "specification": "JOBTYPE ge '01' and (JOBDIY = '1' or JOBDIY = '2')",
+      "actual": 139946,
+      "puf_target": 139946.0,
+      "table_creator_target": 139946.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": ""
+    },
+    {
+      "label": "Total",
+      "metric": "positive_cost_median",
+      "codes": "ALL",
+      "specification": "JOBCOST gt 0 and (JOBDIY = '1' or JOBDIY = '2')",
+      "actual": 2000,
+      "puf_target": 2000.0,
+      "table_creator_target": 2000.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": "Rounded/Topcoded on PUF; Medians and means rounded to 4 significant digits in Table Creator"
+    },
+    {
+      "label": "Total",
+      "metric": "positive_cost_mean",
+      "codes": "ALL",
+      "specification": "JOBCOST gt 0 and (JOBDIY = '1' or JOBDIY = '2')",
+      "actual": 6170,
+      "puf_target": 6170.0,
+      "table_creator_target": 6181.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": "Rounded/Topcoded on PUF; Medians and means rounded to 4 significant digits in Table Creator"
+    },
+    {
+      "label": "Total",
+      "metric": "spending_thousands",
+      "codes": "ALL",
+      "specification": "JOBCOST ge 0 and (JOBDIY = '1' or JOBDIY = '2')",
+      "actual": 824639917,
+      "puf_target": 824639917.0,
+      "table_creator_target": 826973461.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": "Rounded/Topcoded on PUF"
+    },
+    {
+      "label": "Earthquake",
+      "metric": "project_count_moe90_thousands",
+      "actual": 24,
+      "puf_target": 24.0,
+      "pass_check": true
+    },
+    {
+      "label": "Earthquake",
+      "metric": "project_count_thousands",
+      "codes": [
+        "01"
+      ],
+      "specification": "JOBTYPE = '01'",
+      "actual": 31,
+      "puf_target": 31.0,
+      "table_creator_target": 31.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": ""
+    },
+    {
+      "label": "Earthquake",
+      "metric": "positive_cost_median",
+      "codes": [
+        "01"
+      ],
+      "specification": "JOBTYPE = '01' and (JOBCOST gt 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 5000,
+      "puf_target": 5000.0,
+      "table_creator_target": 5000.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": ""
+    },
+    {
+      "label": "Earthquake",
+      "metric": "positive_cost_mean",
+      "codes": [
+        "01"
+      ],
+      "specification": "JOBTYPE = '01' and (JOBCOST gt 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 6050,
+      "puf_target": 6050.0,
+      "table_creator_target": 6046.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": "Rounded/Topcoded on PUF; Medians and means rounded to 4 significant digits in Table Creator"
+    },
+    {
+      "label": "Earthquake",
+      "metric": "spending_thousands",
+      "codes": [
+        "01"
+      ],
+      "specification": "JOBTYPE = '01' and (JOBCOST ge 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 159335,
+      "puf_target": 159335.0,
+      "table_creator_target": 159232.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": "Rounded/Topcoded on PUF"
+    },
+    {
+      "label": "Tornado/hurricane",
+      "metric": "project_count_moe90_thousands",
+      "actual": 87,
+      "puf_target": 87.0,
+      "pass_check": true
+    },
+    {
+      "label": "Tornado/hurricane",
+      "metric": "project_count_thousands",
+      "codes": [
+        "02"
+      ],
+      "specification": "JOBTYPE = '02'",
+      "actual": 663,
+      "puf_target": 663.0,
+      "table_creator_target": 663.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": ""
+    },
+    {
+      "label": "Tornado/hurricane",
+      "metric": "positive_cost_median",
+      "codes": [
+        "02"
+      ],
+      "specification": "JOBTYPE = '02' and (JOBCOST gt 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 8600,
+      "puf_target": 8600.0,
+      "table_creator_target": 8600.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": ""
+    },
+    {
+      "label": "Tornado/hurricane",
+      "metric": "positive_cost_mean",
+      "codes": [
+        "02"
+      ],
+      "specification": "JOBTYPE = '02' and (JOBCOST gt 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 23120,
+      "puf_target": 23120.0,
+      "table_creator_target": 19740.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": "Rounded/Topcoded on PUF; Medians and means rounded to 4 significant digits in Table Creator"
+    },
+    {
+      "label": "Tornado/hurricane",
+      "metric": "spending_thousands",
+      "codes": [
+        "02"
+      ],
+      "specification": "JOBTYPE = '02' and (JOBCOST ge 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 14958880,
+      "puf_target": 14958880.0,
+      "table_creator_target": 12773860.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": "Rounded/Topcoded on PUF"
+    },
+    {
+      "label": "Landslide",
+      "metric": "project_count_thousands",
+      "codes": [
+        "03"
+      ],
+      "specification": "JOBTYPE = '03'",
+      "actual": 0,
+      "puf_target": 0.0,
+      "table_creator_target": null,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": ""
+    },
+    {
+      "label": "Landslide",
+      "metric": "positive_cost_median",
+      "codes": [
+        "03"
+      ],
+      "specification": "JOBTYPE = '03' and (JOBCOST gt 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": null,
+      "puf_target": null,
+      "table_creator_target": null,
+      "pass_check": true,
+      "undefined_empty_domain": true,
+      "reason_for_puf_difference": ""
+    },
+    {
+      "label": "Landslide",
+      "metric": "positive_cost_mean",
+      "codes": [
+        "03"
+      ],
+      "specification": "JOBTYPE = '03' and (JOBCOST gt 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": null,
+      "puf_target": null,
+      "table_creator_target": null,
+      "pass_check": true,
+      "undefined_empty_domain": true,
+      "reason_for_puf_difference": ""
+    },
+    {
+      "label": "Landslide",
+      "metric": "spending_thousands",
+      "codes": [
+        "03"
+      ],
+      "specification": "JOBTYPE = '03' and (JOBCOST ge 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 0,
+      "puf_target": 0.0,
+      "table_creator_target": null,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": ""
+    },
+    {
+      "label": "Fire",
+      "metric": "project_count_moe90_thousands",
+      "actual": 46,
+      "puf_target": 46.0,
+      "pass_check": true
+    },
+    {
+      "label": "Fire",
+      "metric": "project_count_thousands",
+      "codes": [
+        "04"
+      ],
+      "specification": "JOBTYPE = '04'",
+      "actual": 129,
+      "puf_target": 129.0,
+      "table_creator_target": 129.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": ""
+    },
+    {
+      "label": "Fire",
+      "metric": "positive_cost_median",
+      "codes": [
+        "04"
+      ],
+      "specification": "JOBTYPE = '04' and (JOBCOST gt 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 21000,
+      "puf_target": 21000.0,
+      "table_creator_target": 21000.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": ""
+    },
+    {
+      "label": "Fire",
+      "metric": "positive_cost_mean",
+      "codes": [
+        "04"
+      ],
+      "specification": "JOBTYPE = '04' and (JOBCOST gt 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 64850,
+      "puf_target": 64850.0,
+      "table_creator_target": 89780.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": "Rounded/Topcoded on PUF; Medians and means rounded to 4 significant digits in Table Creator"
+    },
+    {
+      "label": "Fire",
+      "metric": "spending_thousands",
+      "codes": [
+        "04"
+      ],
+      "specification": "JOBTYPE = '04' and (JOBCOST ge 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 7858902,
+      "puf_target": 7858902.0,
+      "table_creator_target": 11078776.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": "Rounded/Topcoded on PUF"
+    },
+    {
+      "label": "Flood",
+      "metric": "project_count_moe90_thousands",
+      "actual": 52,
+      "puf_target": 52.0,
+      "pass_check": true
+    },
+    {
+      "label": "Flood",
+      "metric": "project_count_thousands",
+      "codes": [
+        "05"
+      ],
+      "specification": "JOBTYPE = '05'",
+      "actual": 214,
+      "puf_target": 214.0,
+      "table_creator_target": 214.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": ""
+    },
+    {
+      "label": "Flood",
+      "metric": "positive_cost_median",
+      "codes": [
+        "05"
+      ],
+      "specification": "JOBTYPE = '05' and (JOBCOST gt 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 10000,
+      "puf_target": 10000.0,
+      "table_creator_target": 10000.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": ""
+    },
+    {
+      "label": "Flood",
+      "metric": "positive_cost_mean",
+      "codes": [
+        "05"
+      ],
+      "specification": "JOBTYPE = '05' and (JOBCOST gt 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 18370,
+      "puf_target": 18370.0,
+      "table_creator_target": 19810.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": "Rounded/Topcoded on PUF; Medians and means rounded to 4 significant digits in Table Creator"
+    },
+    {
+      "label": "Flood",
+      "metric": "spending_thousands",
+      "codes": [
+        "05"
+      ],
+      "specification": "JOBTYPE = '05' and (JOBCOST ge 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 3880749,
+      "puf_target": 3880749.0,
+      "table_creator_target": 4184627.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": "Rounded/Topcoded on PUF"
+    },
+    {
+      "label": "Other",
+      "metric": "project_count_moe90_thousands",
+      "actual": 124,
+      "puf_target": 124.0,
+      "pass_check": true
+    },
+    {
+      "label": "Other",
+      "metric": "project_count_thousands",
+      "codes": [
+        "06"
+      ],
+      "specification": "JOBTYPE = '06'",
+      "actual": 1133,
+      "puf_target": 1133.0,
+      "table_creator_target": 1133.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": ""
+    },
+    {
+      "label": "Other",
+      "metric": "positive_cost_median",
+      "codes": [
+        "06"
+      ],
+      "specification": "JOBTYPE = '06' and (JOBCOST gt 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 12800,
+      "puf_target": 12800.0,
+      "table_creator_target": 12800.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": ""
+    },
+    {
+      "label": "Other",
+      "metric": "positive_cost_mean",
+      "codes": [
+        "06"
+      ],
+      "specification": "JOBTYPE = '06' and (JOBCOST gt 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 19800,
+      "puf_target": 19800.0,
+      "table_creator_target": 18790.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": "Rounded/Topcoded on PUF; Medians and means rounded to 4 significant digits in Table Creator"
+    },
+    {
+      "label": "Other",
+      "metric": "spending_thousands",
+      "codes": [
+        "06"
+      ],
+      "specification": "JOBTYPE = '06' and (JOBCOST ge 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 22038866,
+      "puf_target": 22038866.0,
+      "table_creator_target": 20913422.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": "Rounded/Topcoded on PUF"
+    },
+    {
+      "label": "Bedroom",
+      "metric": "project_count_moe90_thousands",
+      "actual": 83,
+      "puf_target": 83.0,
+      "pass_check": true
+    },
+    {
+      "label": "Bedroom",
+      "metric": "project_count_thousands",
+      "codes": [
+        "07"
+      ],
+      "specification": "JOBTYPE = '07'",
+      "actual": 557,
+      "puf_target": 557.0,
+      "table_creator_target": 557.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": ""
+    },
+    {
+      "label": "Bedroom",
+      "metric": "positive_cost_median",
+      "codes": [
+        "07"
+      ],
+      "specification": "JOBTYPE = '07' and (JOBCOST gt 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 7000,
+      "puf_target": 7000.0,
+      "table_creator_target": 7000.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": "Rounded/Topcoded on PUF; Medians and means rounded to 4 significant digits in Table Creator"
+    },
+    {
+      "label": "Bedroom",
+      "metric": "positive_cost_mean",
+      "codes": [
+        "07"
+      ],
+      "specification": "JOBTYPE = '07' and (JOBCOST gt 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 19480,
+      "puf_target": 19480.0,
+      "table_creator_target": 19600.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": "Rounded/Topcoded on PUF; Medians and means rounded to 4 significant digits in Table Creator"
+    },
+    {
+      "label": "Bedroom",
+      "metric": "spending_thousands",
+      "codes": [
+        "07"
+      ],
+      "specification": "JOBTYPE = '07' and (JOBCOST ge 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 9913958,
+      "puf_target": 9913958.0,
+      "table_creator_target": 10060838.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": "Rounded/Topcoded on PUF"
+    },
+    {
+      "label": "Bath",
+      "metric": "project_count_moe90_thousands",
+      "actual": 62,
+      "puf_target": 62.0,
+      "pass_check": true
+    },
+    {
+      "label": "Bath",
+      "metric": "project_count_thousands",
+      "codes": [
+        "08"
+      ],
+      "specification": "JOBTYPE = '08'",
+      "actual": 329,
+      "puf_target": 329.0,
+      "table_creator_target": 329.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": ""
+    },
+    {
+      "label": "Bath",
+      "metric": "positive_cost_median",
+      "codes": [
+        "08"
+      ],
+      "specification": "JOBTYPE = '08' and (JOBCOST gt 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 14200,
+      "puf_target": 14200.0,
+      "table_creator_target": 10130.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": "Rounded/Topcoded on PUF; Medians and means rounded to 4 significant digits in Table Creator"
+    },
+    {
+      "label": "Bath",
+      "metric": "positive_cost_mean",
+      "codes": [
+        "08"
+      ],
+      "specification": "JOBTYPE = '08' and (JOBCOST gt 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 21220,
+      "puf_target": 21220.0,
+      "table_creator_target": 21490.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": "Rounded/Topcoded on PUF; Medians and means rounded to 4 significant digits in Table Creator"
+    },
+    {
+      "label": "Bath",
+      "metric": "spending_thousands",
+      "codes": [
+        "08"
+      ],
+      "specification": "JOBTYPE = '08' and (JOBCOST ge 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 6901560,
+      "puf_target": 6901560.0,
+      "table_creator_target": 7029921.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": "Rounded/Topcoded on PUF"
+    },
+    {
+      "label": "Recreation Room",
+      "metric": "project_count_moe90_thousands",
+      "actual": 51,
+      "puf_target": 51.0,
+      "pass_check": true
+    },
+    {
+      "label": "Recreation Room",
+      "metric": "project_count_thousands",
+      "codes": [
+        "09"
+      ],
+      "specification": "JOBTYPE = '09'",
+      "actual": 186,
+      "puf_target": 186.0,
+      "table_creator_target": 186.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": ""
+    },
+    {
+      "label": "Recreation Room",
+      "metric": "positive_cost_median",
+      "codes": [
+        "09"
+      ],
+      "specification": "JOBTYPE = '09' and (JOBCOST gt 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 16000,
+      "puf_target": 16000.0,
+      "table_creator_target": 10000.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": "Rounded/Topcoded on PUF; Medians and means rounded to 4 significant digits in Table Creator"
+    },
+    {
+      "label": "Recreation Room",
+      "metric": "positive_cost_mean",
+      "codes": [
+        "09"
+      ],
+      "specification": "JOBTYPE = '09' and (JOBCOST gt 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 18410,
+      "puf_target": 18410.0,
+      "table_creator_target": 18020.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": "Rounded/Topcoded on PUF; Medians and means rounded to 4 significant digits in Table Creator"
+    },
+    {
+      "label": "Recreation Room",
+      "metric": "spending_thousands",
+      "codes": [
+        "09"
+      ],
+      "specification": "JOBTYPE = '09' and (JOBCOST ge 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 2951703,
+      "puf_target": 2951703.0,
+      "table_creator_target": 3136928.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": "Rounded/Topcoded on PUF"
+    },
+    {
+      "label": "Kitchen",
+      "metric": "project_count_moe90_thousands",
+      "actual": 47,
+      "puf_target": 47.0,
+      "pass_check": true
+    },
+    {
+      "label": "Kitchen",
+      "metric": "project_count_thousands",
+      "codes": [
+        "10"
+      ],
+      "specification": "JOBTYPE = '10'",
+      "actual": 173,
+      "puf_target": 173.0,
+      "table_creator_target": 173.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": ""
+    },
+    {
+      "label": "Kitchen",
+      "metric": "positive_cost_median",
+      "codes": [
+        "10"
+      ],
+      "specification": "JOBTYPE = '10' and (JOBCOST gt 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 30000,
+      "puf_target": 30000.0,
+      "table_creator_target": 25000.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": "Rounded/Topcoded on PUF; Medians and means rounded to 4 significant digits in Table Creator"
+    },
+    {
+      "label": "Kitchen",
+      "metric": "positive_cost_mean",
+      "codes": [
+        "10"
+      ],
+      "specification": "JOBTYPE = '10' and (JOBCOST gt 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 42010,
+      "puf_target": 42010.0,
+      "table_creator_target": 42950.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": "Rounded/Topcoded on PUF; Medians and means rounded to 4 significant digits in Table Creator"
+    },
+    {
+      "label": "Kitchen",
+      "metric": "spending_thousands",
+      "codes": [
+        "10"
+      ],
+      "specification": "JOBTYPE = '10' and (JOBCOST ge 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 5808765,
+      "puf_target": 5808765.0,
+      "table_creator_target": 7177327.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": "Rounded/Topcoded on PUF"
+    },
+    {
+      "label": "Other",
+      "metric": "project_count_moe90_thousands",
+      "actual": 99,
+      "puf_target": 99.0,
+      "pass_check": true
+    },
+    {
+      "label": "Other",
+      "metric": "project_count_thousands",
+      "codes": [
+        "11"
+      ],
+      "specification": "JOBTYPE = '11'",
+      "actual": 989,
+      "puf_target": 989.0,
+      "table_creator_target": 989.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": ""
+    },
+    {
+      "label": "Other",
+      "metric": "positive_cost_median",
+      "codes": [
+        "11"
+      ],
+      "specification": "JOBTYPE = '11' and (JOBCOST gt 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 7000,
+      "puf_target": 7000.0,
+      "table_creator_target": 7000.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": ""
+    },
+    {
+      "label": "Other",
+      "metric": "positive_cost_mean",
+      "codes": [
+        "11"
+      ],
+      "specification": "JOBTYPE = '11' and (JOBCOST gt 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 23450,
+      "puf_target": 23450.0,
+      "table_creator_target": 23430.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": "Rounded/Topcoded on PUF; Medians and means rounded to 4 significant digits in Table Creator"
+    },
+    {
+      "label": "Other",
+      "metric": "spending_thousands",
+      "codes": [
+        "11"
+      ],
+      "specification": "JOBTYPE = '11' and (JOBCOST ge 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 21671716,
+      "puf_target": 21671716.0,
+      "table_creator_target": 21651596.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": "Rounded/Topcoded on PUF"
+    },
+    {
+      "label": "Bath",
+      "metric": "project_count_moe90_thousands",
+      "actual": 268,
+      "puf_target": 268.0,
+      "pass_check": true
+    },
+    {
+      "label": "Bath",
+      "metric": "project_count_thousands",
+      "codes": [
+        "12"
+      ],
+      "specification": "JOBTYPE = '12'",
+      "actual": 7467,
+      "puf_target": 7467.0,
+      "table_creator_target": 7467.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": ""
+    },
+    {
+      "label": "Bath",
+      "metric": "positive_cost_median",
+      "codes": [
+        "12"
+      ],
+      "specification": "JOBTYPE = '12' and (JOBCOST gt 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 5000,
+      "puf_target": 5000.0,
+      "table_creator_target": 5000.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": ""
+    },
+    {
+      "label": "Bath",
+      "metric": "positive_cost_mean",
+      "codes": [
+        "12"
+      ],
+      "specification": "JOBTYPE = '12' and (JOBCOST gt 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 9313,
+      "puf_target": 9313.0,
+      "table_creator_target": 9322.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": "Rounded/Topcoded on PUF; Medians and means rounded to 4 significant digits in Table Creator"
+    },
+    {
+      "label": "Bath",
+      "metric": "spending_thousands",
+      "codes": [
+        "12"
+      ],
+      "specification": "JOBTYPE = '12' and (JOBCOST ge 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 68826584,
+      "puf_target": 68826584.0,
+      "table_creator_target": 68894446.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": "Rounded/Topcoded on PUF"
+    },
+    {
+      "label": "Kitchen",
+      "metric": "project_count_moe90_thousands",
+      "actual": 242,
+      "puf_target": 242.0,
+      "pass_check": true
+    },
+    {
+      "label": "Kitchen",
+      "metric": "project_count_thousands",
+      "codes": [
+        "13"
+      ],
+      "specification": "JOBTYPE = '13'",
+      "actual": 4965,
+      "puf_target": 4965.0,
+      "table_creator_target": 4965.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": ""
+    },
+    {
+      "label": "Kitchen",
+      "metric": "positive_cost_median",
+      "codes": [
+        "13"
+      ],
+      "specification": "JOBTYPE = '13' and (JOBCOST gt 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 8000,
+      "puf_target": 8000.0,
+      "table_creator_target": 8000.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": ""
+    },
+    {
+      "label": "Kitchen",
+      "metric": "positive_cost_mean",
+      "codes": [
+        "13"
+      ],
+      "specification": "JOBTYPE = '13' and (JOBCOST gt 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 16950,
+      "puf_target": 16950.0,
+      "table_creator_target": 16960.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": "Rounded/Topcoded on PUF; Medians and means rounded to 4 significant digits in Table Creator"
+    },
+    {
+      "label": "Kitchen",
+      "metric": "spending_thousands",
+      "codes": [
+        "13"
+      ],
+      "specification": "JOBTYPE = '13' and (JOBCOST ge 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 83013148,
+      "puf_target": 83013148.0,
+      "table_creator_target": 83059394.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": "Rounded/Topcoded on PUF"
+    },
+    {
+      "label": "Attached garage/carport",
+      "metric": "project_count_moe90_thousands",
+      "actual": 101,
+      "puf_target": 101.0,
+      "pass_check": true
+    },
+    {
+      "label": "Attached garage/carport",
+      "metric": "project_count_thousands",
+      "codes": [
+        "14"
+      ],
+      "specification": "JOBTYPE= '14'",
+      "actual": 945,
+      "puf_target": 945.0,
+      "table_creator_target": 945.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": ""
+    },
+    {
+      "label": "Attached garage/carport",
+      "metric": "positive_cost_median",
+      "codes": [
+        "14"
+      ],
+      "specification": "JOBTYPE= '14' and (JOBCOST gt 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 4700,
+      "puf_target": 4700.0,
+      "table_creator_target": 4600.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": "Rounded/Topcoded on PUF; Medians and means rounded to 4 significant digits in Table Creator"
+    },
+    {
+      "label": "Attached garage/carport",
+      "metric": "positive_cost_mean",
+      "codes": [
+        "14"
+      ],
+      "specification": "JOBTYPE= '14' and (JOBCOST gt 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 16780,
+      "puf_target": 16780.0,
+      "table_creator_target": 16780.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": "Rounded/Topcoded on PUF; Medians and means rounded to 4 significant digits in Table Creator"
+    },
+    {
+      "label": "Attached garage/carport",
+      "metric": "spending_thousands",
+      "codes": [
+        "14"
+      ],
+      "specification": "JOBTYPE= '14' and (JOBCOST ge 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 14192470,
+      "puf_target": 14192470.0,
+      "table_creator_target": 14190675.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": "Rounded/Topcoded on PUF"
+    },
+    {
+      "label": "Porch/deck/patio/terrace",
+      "metric": "project_count_moe90_thousands",
+      "actual": 194,
+      "puf_target": 194.0,
+      "pass_check": true
+    },
+    {
+      "label": "Porch/deck/patio/terrace",
+      "metric": "project_count_thousands",
+      "codes": [
+        "15"
+      ],
+      "specification": "JOBTYPE = '15'",
+      "actual": 3863,
+      "puf_target": 3863.0,
+      "table_creator_target": 3863.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": ""
+    },
+    {
+      "label": "Porch/deck/patio/terrace",
+      "metric": "positive_cost_median",
+      "codes": [
+        "15"
+      ],
+      "specification": "JOBTYPE = '15' and (JOBCOST gt 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 4800,
+      "puf_target": 4800.0,
+      "table_creator_target": 4750.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": "Rounded/Topcoded on PUF; Medians and means rounded to 4 significant digits in Table Creator"
+    },
+    {
+      "label": "Porch/deck/patio/terrace",
+      "metric": "positive_cost_mean",
+      "codes": [
+        "15"
+      ],
+      "specification": "JOBTYPE = '15' and (JOBCOST gt 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 8857,
+      "puf_target": 8857.0,
+      "table_creator_target": 8860.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": "Rounded/Topcoded on PUF; Medians and means rounded to 4 significant digits in Table Creator"
+    },
+    {
+      "label": "Porch/deck/patio/terrace",
+      "metric": "spending_thousands",
+      "codes": [
+        "15"
+      ],
+      "specification": "JOBTYPE = '15' and (JOBCOST ge 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 32754554,
+      "puf_target": 32754554.0,
+      "table_creator_target": 32765646.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": "Rounded/Topcoded on PUF"
+    },
+    {
+      "label": "Roofing",
+      "metric": "project_count_moe90_thousands",
+      "actual": 348,
+      "puf_target": 348.0,
+      "pass_check": true
+    },
+    {
+      "label": "Roofing",
+      "metric": "project_count_thousands",
+      "codes": [
+        "16"
+      ],
+      "specification": "JOBTYPE = '16'",
+      "actual": 8301,
+      "puf_target": 8301.0,
+      "table_creator_target": 8301.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": ""
+    },
+    {
+      "label": "Roofing",
+      "metric": "positive_cost_median",
+      "codes": [
+        "16"
+      ],
+      "specification": "JOBTYPE = '16' and (JOBCOST gt 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 10000,
+      "puf_target": 10000.0,
+      "table_creator_target": 10000.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": ""
+    },
+    {
+      "label": "Roofing",
+      "metric": "positive_cost_mean",
+      "codes": [
+        "16"
+      ],
+      "specification": "JOBTYPE = '16' and (JOBCOST gt 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 11610,
+      "puf_target": 11610.0,
+      "table_creator_target": 11610.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": "Rounded/Topcoded on PUF; Medians and means rounded to 4 significant digits in Table Creator"
+    },
+    {
+      "label": "Roofing",
+      "metric": "spending_thousands",
+      "codes": [
+        "16"
+      ],
+      "specification": "JOBTYPE = '16' and (JOBCOST ge 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 93525580,
+      "puf_target": 93525580.0,
+      "table_creator_target": 93519785.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": "Rounded/Topcoded on PUF"
+    },
+    {
+      "label": "Siding",
+      "metric": "project_count_moe90_thousands",
+      "actual": 144,
+      "puf_target": 144.0,
+      "pass_check": true
+    },
+    {
+      "label": "Siding",
+      "metric": "project_count_thousands",
+      "codes": [
+        "17"
+      ],
+      "specification": "JOBTYPE = '17'",
+      "actual": 2263,
+      "puf_target": 2263.0,
+      "table_creator_target": 2263.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": ""
+    },
+    {
+      "label": "Siding",
+      "metric": "positive_cost_median",
+      "codes": [
+        "17"
+      ],
+      "specification": "JOBTYPE = '17' and (JOBCOST gt 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 5000,
+      "puf_target": 5000.0,
+      "table_creator_target": 5000.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": ""
+    },
+    {
+      "label": "Siding",
+      "metric": "positive_cost_mean",
+      "codes": [
+        "17"
+      ],
+      "specification": "JOBTYPE = '17' and (JOBCOST gt 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 8993,
+      "puf_target": 8993.0,
+      "table_creator_target": 8990.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": "Rounded/Topcoded on PUF; Medians and means rounded to 4 significant digits in Table Creator"
+    },
+    {
+      "label": "Siding",
+      "metric": "spending_thousands",
+      "codes": [
+        "17"
+      ],
+      "specification": "JOBTYPE = '17' and (JOBCOST ge 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 19277207,
+      "puf_target": 19277207.0,
+      "table_creator_target": 19270225.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": "Rounded/Topcoded on PUF"
+    },
+    {
+      "label": "Windows/doors",
+      "metric": "project_count_moe90_thousands",
+      "actual": 320,
+      "puf_target": 320.0,
+      "pass_check": true
+    },
+    {
+      "label": "Windows/doors",
+      "metric": "project_count_thousands",
+      "codes": [
+        "18"
+      ],
+      "specification": "JOBTYPE = '18'",
+      "actual": 7892,
+      "puf_target": 7892.0,
+      "table_creator_target": 7892.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": ""
+    },
+    {
+      "label": "Windows/doors",
+      "metric": "positive_cost_median",
+      "codes": [
+        "18"
+      ],
+      "specification": "JOBTYPE = '18' and (JOBCOST gt 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 2800,
+      "puf_target": 2800.0,
+      "table_creator_target": 2800.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": "Rounded/Topcoded on PUF; Medians and means rounded to 4 significant digits in Table Creator"
+    },
+    {
+      "label": "Windows/doors",
+      "metric": "positive_cost_mean",
+      "codes": [
+        "18"
+      ],
+      "specification": "JOBTYPE = '18' and (JOBCOST gt 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 5916,
+      "puf_target": 5916.0,
+      "table_creator_target": 5914.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": "Rounded/Topcoded on PUF; Medians and means rounded to 4 significant digits in Table Creator"
+    },
+    {
+      "label": "Windows/doors",
+      "metric": "spending_thousands",
+      "codes": [
+        "18"
+      ],
+      "specification": "JOBTYPE = '18' and (JOBCOST ge 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 45176613,
+      "puf_target": 45176613.0,
+      "table_creator_target": 45166717.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": "Rounded/Topcoded on PUF"
+    },
+    {
+      "label": "Chimney/stairs/other exterior additions",
+      "metric": "project_count_moe90_thousands",
+      "actual": 154,
+      "puf_target": 154.0,
+      "pass_check": true
+    },
+    {
+      "label": "Chimney/stairs/other exterior additions",
+      "metric": "project_count_thousands",
+      "codes": [
+        "19"
+      ],
+      "specification": "JOBTYPE = '19'",
+      "actual": 1852,
+      "puf_target": 1852.0,
+      "table_creator_target": 1852.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": ""
+    },
+    {
+      "label": "Chimney/stairs/other exterior additions",
+      "metric": "positive_cost_median",
+      "codes": [
+        "19"
+      ],
+      "specification": "JOBTYPE = '19' and (JOBCOST gt 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 2100,
+      "puf_target": 2100.0,
+      "table_creator_target": 2057.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": "Rounded/Topcoded on PUF; Medians and means rounded to 4 significant digits in Table Creator"
+    },
+    {
+      "label": "Chimney/stairs/other exterior additions",
+      "metric": "positive_cost_mean",
+      "codes": [
+        "19"
+      ],
+      "specification": "JOBTYPE = '19' and (JOBCOST gt 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 4593,
+      "puf_target": 4593.0,
+      "table_creator_target": 4589.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": "Rounded/Topcoded on PUF; Medians and means rounded to 4 significant digits in Table Creator"
+    },
+    {
+      "label": "Chimney/stairs/other exterior additions",
+      "metric": "spending_thousands",
+      "codes": [
+        "19"
+      ],
+      "specification": "JOBTYPE = '19' and (JOBCOST ge 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 7973104,
+      "puf_target": 7973104.0,
+      "table_creator_target": 7972153.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": "Rounded/Topcoded on PUF"
+    },
+    {
+      "label": "Insulation",
+      "metric": "project_count_moe90_thousands",
+      "actual": 196,
+      "puf_target": 196.0,
+      "pass_check": true
+    },
+    {
+      "label": "Insulation",
+      "metric": "project_count_thousands",
+      "codes": [
+        "20"
+      ],
+      "specification": "JOBTYPE = '20'",
+      "actual": 3057,
+      "puf_target": 3057.0,
+      "table_creator_target": 3057.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": ""
+    },
+    {
+      "label": "Insulation",
+      "metric": "positive_cost_median",
+      "codes": [
+        "20"
+      ],
+      "specification": "JOBTYPE = '20' and (JOBCOST gt 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 1500,
+      "puf_target": 1500.0,
+      "table_creator_target": 1500.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": ""
+    },
+    {
+      "label": "Insulation",
+      "metric": "positive_cost_mean",
+      "codes": [
+        "20"
+      ],
+      "specification": "JOBTYPE = '20' and (JOBCOST gt 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 2506,
+      "puf_target": 2506.0,
+      "table_creator_target": 2505.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": "Rounded/Topcoded on PUF; Medians and means rounded to 4 significant digits in Table Creator"
+    },
+    {
+      "label": "Insulation",
+      "metric": "spending_thousands",
+      "codes": [
+        "20"
+      ],
+      "specification": "JOBTYPE = '20' and (JOBCOST ge 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 7057870,
+      "puf_target": 7057870.0,
+      "table_creator_target": 7055483.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": "Rounded/Topcoded on PUF"
+    },
+    {
+      "label": "Water pipes",
+      "metric": "project_count_moe90_thousands",
+      "actual": 229,
+      "puf_target": 229.0,
+      "pass_check": true
+    },
+    {
+      "label": "Water pipes",
+      "metric": "project_count_thousands",
+      "codes": [
+        "21"
+      ],
+      "specification": "JOBTYPE = '21'",
+      "actual": 3589,
+      "puf_target": 3589.0,
+      "table_creator_target": 3589.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": ""
+    },
+    {
+      "label": "Water pipes",
+      "metric": "positive_cost_median",
+      "codes": [
+        "21"
+      ],
+      "specification": "JOBTYPE = '21' and (JOBCOST gt 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 1000,
+      "puf_target": 1000.0,
+      "table_creator_target": 1000.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": ""
+    },
+    {
+      "label": "Water pipes",
+      "metric": "positive_cost_mean",
+      "codes": [
+        "21"
+      ],
+      "specification": "JOBTYPE = '21' and (JOBCOST gt 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 2911,
+      "puf_target": 2911.0,
+      "table_creator_target": 2911.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": "Rounded/Topcoded on PUF; Medians and means rounded to 4 significant digits in Table Creator"
+    },
+    {
+      "label": "Water pipes",
+      "metric": "spending_thousands",
+      "codes": [
+        "21"
+      ],
+      "specification": "JOBTYPE = '21' and (JOBCOST ge 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 9874127,
+      "puf_target": 9874127.0,
+      "table_creator_target": 9873034.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": "Rounded/Topcoded on PUF"
+    },
+    {
+      "label": "Plumbing fixtures",
+      "metric": "project_count_moe90_thousands",
+      "actual": 364,
+      "puf_target": 364.0,
+      "pass_check": true
+    },
+    {
+      "label": "Plumbing fixtures",
+      "metric": "project_count_thousands",
+      "codes": [
+        "22"
+      ],
+      "specification": "JOBTYPE = '22'",
+      "actual": 9918,
+      "puf_target": 9918.0,
+      "table_creator_target": 9918.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": ""
+    },
+    {
+      "label": "Plumbing fixtures",
+      "metric": "positive_cost_median",
+      "codes": [
+        "22"
+      ],
+      "specification": "JOBTYPE = '22' and (JOBCOST gt 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 540,
+      "puf_target": 540.0,
+      "table_creator_target": 542.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": "Rounded/Topcoded on PUF; Medians and means rounded to 4 significant digits in Table Creator"
+    },
+    {
+      "label": "Plumbing fixtures",
+      "metric": "positive_cost_mean",
+      "codes": [
+        "22"
+      ],
+      "specification": "JOBTYPE = '22' and (JOBCOST gt 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 1979,
+      "puf_target": 1979.0,
+      "table_creator_target": 1979.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": ""
+    },
+    {
+      "label": "Plumbing fixtures",
+      "metric": "spending_thousands",
+      "codes": [
+        "22"
+      ],
+      "specification": "JOBTYPE = '22' and (JOBCOST ge 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 18562411,
+      "puf_target": 18562411.0,
+      "table_creator_target": 18561310.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": "Rounded/Topcoded on PUF"
+    },
+    {
+      "label": "Electrical wiring/fuse boxes/breaker switches",
+      "metric": "project_count_moe90_thousands",
+      "actual": 318,
+      "puf_target": 318.0,
+      "pass_check": true
+    },
+    {
+      "label": "Electrical wiring/fuse boxes/breaker switches",
+      "metric": "project_count_thousands",
+      "codes": [
+        "23"
+      ],
+      "specification": "JOBTYPE = '23'",
+      "actual": 6595,
+      "puf_target": 6595.0,
+      "table_creator_target": 6595.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": ""
+    },
+    {
+      "label": "Electrical wiring/fuse boxes/breaker switches",
+      "metric": "positive_cost_median",
+      "codes": [
+        "23"
+      ],
+      "specification": "JOBTYPE = '23' and (JOBCOST gt 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 1000,
+      "puf_target": 1000.0,
+      "table_creator_target": 1000.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": ""
+    },
+    {
+      "label": "Electrical wiring/fuse boxes/breaker switches",
+      "metric": "positive_cost_mean",
+      "codes": [
+        "23"
+      ],
+      "specification": "JOBTYPE = '23' and (JOBCOST gt 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 2905,
+      "puf_target": 2905.0,
+      "table_creator_target": 2907.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": "Rounded/Topcoded on PUF; Medians and means rounded to 4 significant digits in Table Creator"
+    },
+    {
+      "label": "Electrical wiring/fuse boxes/breaker switches",
+      "metric": "spending_thousands",
+      "codes": [
+        "23"
+      ],
+      "specification": "JOBTYPE = '23' and (JOBCOST ge 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 18295846,
+      "puf_target": 18295846.0,
+      "table_creator_target": 18308843.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": "Rounded/Topcoded on PUF"
+    },
+    {
+      "label": "Security system",
+      "metric": "project_count_moe90_thousands",
+      "actual": 249,
+      "puf_target": 249.0,
+      "pass_check": true
+    },
+    {
+      "label": "Security system",
+      "metric": "project_count_thousands",
+      "codes": [
+        "24"
+      ],
+      "specification": "JOBTYPE = '24'",
+      "actual": 6934,
+      "puf_target": 6934.0,
+      "table_creator_target": 6934.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": ""
+    },
+    {
+      "label": "Security system",
+      "metric": "positive_cost_median",
+      "codes": [
+        "24"
+      ],
+      "specification": "JOBTYPE = '24' and (JOBCOST gt 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 430,
+      "puf_target": 430.0,
+      "table_creator_target": 429.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": "Rounded/Topcoded on PUF; Medians and means rounded to 4 significant digits in Table Creator"
+    },
+    {
+      "label": "Security system",
+      "metric": "positive_cost_mean",
+      "codes": [
+        "24"
+      ],
+      "specification": "JOBTYPE = '24' and (JOBCOST gt 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 876,
+      "puf_target": 876.0,
+      "table_creator_target": 877.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": "Rounded/Topcoded on PUF; Medians and means rounded to 4 significant digits in Table Creator"
+    },
+    {
+      "label": "Security system",
+      "metric": "spending_thousands",
+      "codes": [
+        "24"
+      ],
+      "specification": "JOBTYPE = '24' and (JOBCOST ge 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 5718438,
+      "puf_target": 5718438.0,
+      "table_creator_target": 5723260.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": "Rounded/Topcoded on PUF"
+    },
+    {
+      "label": "Flooring/carpeting/paneling/ceiling tiles",
+      "metric": "project_count_moe90_thousands",
+      "actual": 353,
+      "puf_target": 353.0,
+      "pass_check": true
+    },
+    {
+      "label": "Flooring/carpeting/paneling/ceiling tiles",
+      "metric": "project_count_thousands",
+      "codes": [
+        "25"
+      ],
+      "specification": "JOBTYPE = '25'",
+      "actual": 10945,
+      "puf_target": 10945.0,
+      "table_creator_target": 10945.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": ""
+    },
+    {
+      "label": "Flooring/carpeting/paneling/ceiling tiles",
+      "metric": "positive_cost_median",
+      "codes": [
+        "25"
+      ],
+      "specification": "JOBTYPE = '25' and (JOBCOST gt 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 3000,
+      "puf_target": 3000.0,
+      "table_creator_target": 3000.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": ""
+    },
+    {
+      "label": "Flooring/carpeting/paneling/ceiling tiles",
+      "metric": "positive_cost_mean",
+      "codes": [
+        "25"
+      ],
+      "specification": "JOBTYPE = '25' and (JOBCOST gt 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 4828,
+      "puf_target": 4828.0,
+      "table_creator_target": 4829.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": "Rounded/Topcoded on PUF; Medians and means rounded to 4 significant digits in Table Creator"
+    },
+    {
+      "label": "Flooring/carpeting/paneling/ceiling tiles",
+      "metric": "spending_thousands",
+      "codes": [
+        "25"
+      ],
+      "specification": "JOBTYPE = '25' and (JOBCOST ge 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 51037570,
+      "puf_target": 51037570.0,
+      "table_creator_target": 51046498.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": "Rounded/Topcoded on PUF"
+    },
+    {
+      "label": "HVAC",
+      "metric": "project_count_moe90_thousands",
+      "actual": 453,
+      "puf_target": 453.0,
+      "pass_check": true
+    },
+    {
+      "label": "HVAC",
+      "metric": "project_count_thousands",
+      "codes": [
+        "26",
+        "27"
+      ],
+      "specification": "(JOBTYPE = '26' or JOBTYPE = '27')",
+      "actual": 12803,
+      "puf_target": 12803.0,
+      "table_creator_target": 12803.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": ""
+    },
+    {
+      "label": "HVAC",
+      "metric": "positive_cost_median",
+      "codes": [
+        "26",
+        "27"
+      ],
+      "specification": "(JOBTYPE = '26' or JOBTYPE = '27')  and (JOBCOST gt 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 5500,
+      "puf_target": 5500.0,
+      "table_creator_target": 5500.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": "Rounded/Topcoded on PUF; Medians and means rounded to 4 significant digits in Table Creator"
+    },
+    {
+      "label": "HVAC",
+      "metric": "positive_cost_mean",
+      "codes": [
+        "26",
+        "27"
+      ],
+      "specification": "(JOBTYPE = '26' or JOBTYPE = '27')  and (JOBCOST gt 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 6835,
+      "puf_target": 6835.0,
+      "table_creator_target": 6836.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": "Rounded/Topcoded on PUF; Medians and means rounded to 4 significant digits in Table Creator"
+    },
+    {
+      "label": "HVAC",
+      "metric": "spending_thousands",
+      "codes": [
+        "26",
+        "27"
+      ],
+      "specification": "(JOBTYPE = '26' or JOBTYPE = '27')  and (JOBCOST ge 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 82438986,
+      "puf_target": 82438986.0,
+      "table_creator_target": 82442503.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": "Rounded/Topcoded on PUF"
+    },
+    {
+      "label": "Septic tank",
+      "metric": "project_count_moe90_thousands",
+      "actual": 81,
+      "puf_target": 81.0,
+      "pass_check": true
+    },
+    {
+      "label": "Septic tank",
+      "metric": "project_count_thousands",
+      "codes": [
+        "28"
+      ],
+      "specification": "JOBTYPE = '28'",
+      "actual": 548,
+      "puf_target": 548.0,
+      "table_creator_target": 548.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": ""
+    },
+    {
+      "label": "Septic tank",
+      "metric": "positive_cost_median",
+      "codes": [
+        "28"
+      ],
+      "specification": "JOBTYPE = '28' and (JOBCOST gt 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 5000,
+      "puf_target": 5000.0,
+      "table_creator_target": 5000.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": "Rounded/Topcoded on PUF; Medians and means rounded to 4 significant digits in Table Creator"
+    },
+    {
+      "label": "Septic tank",
+      "metric": "positive_cost_mean",
+      "codes": [
+        "28"
+      ],
+      "specification": "JOBTYPE = '28' and (JOBCOST gt 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 7924,
+      "puf_target": 7924.0,
+      "table_creator_target": 7945.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": "Rounded/Topcoded on PUF; Medians and means rounded to 4 significant digits in Table Creator"
+    },
+    {
+      "label": "Septic tank",
+      "metric": "spending_thousands",
+      "codes": [
+        "28"
+      ],
+      "specification": "JOBTYPE = '28' and (JOBCOST ge 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 3820311,
+      "puf_target": 3820311.0,
+      "table_creator_target": 3876396.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": "Rounded/Topcoded on PUF"
+    },
+    {
+      "label": "Water heater/dishwasher/garbage disposal",
+      "metric": "project_count_moe90_thousands",
+      "actual": 447,
+      "puf_target": 447.0,
+      "pass_check": true
+    },
+    {
+      "label": "Water heater/dishwasher/garbage disposal",
+      "metric": "project_count_thousands",
+      "codes": [
+        "29",
+        "30"
+      ],
+      "specification": "(JOBTYPE = '29' or JOBTYPE = '30')",
+      "actual": 16380,
+      "puf_target": 16380.0,
+      "table_creator_target": 16380.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": ""
+    },
+    {
+      "label": "Water heater/dishwasher/garbage disposal",
+      "metric": "positive_cost_median",
+      "codes": [
+        "29",
+        "30"
+      ],
+      "specification": "(JOBTYPE = '29' or JOBTYPE = '30') and (JOBCOST gt 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 800,
+      "puf_target": 800.0,
+      "table_creator_target": 800.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": ""
+    },
+    {
+      "label": "Water heater/dishwasher/garbage disposal",
+      "metric": "positive_cost_mean",
+      "codes": [
+        "29",
+        "30"
+      ],
+      "specification": "(JOBTYPE = '29' or JOBTYPE = '30') and (JOBCOST gt 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 1148,
+      "puf_target": 1148.0,
+      "table_creator_target": 1148.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": "Rounded/Topcoded on PUF; Medians and means rounded to 4 significant digits in Table Creator"
+    },
+    {
+      "label": "Water heater/dishwasher/garbage disposal",
+      "metric": "spending_thousands",
+      "codes": [
+        "29",
+        "30"
+      ],
+      "specification": "(JOBTYPE = '29' or JOBTYPE = '30') and (JOBCOST ge 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 18130573,
+      "puf_target": 18130573.0,
+      "table_creator_target": 18126905.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": "Rounded/Topcoded on PUF"
+    },
+    {
+      "label": "Other interior",
+      "metric": "project_count_moe90_thousands",
+      "actual": 276,
+      "puf_target": 276.0,
+      "pass_check": true
+    },
+    {
+      "label": "Other interior",
+      "metric": "project_count_thousands",
+      "codes": [
+        "31"
+      ],
+      "specification": "JOBTYPE = '31'",
+      "actual": 3414,
+      "puf_target": 3414.0,
+      "table_creator_target": 3414.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": ""
+    },
+    {
+      "label": "Other interior",
+      "metric": "positive_cost_median",
+      "codes": [
+        "31"
+      ],
+      "specification": "JOBTYPE = '31' and (JOBCOST gt 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 2100,
+      "puf_target": 2100.0,
+      "table_creator_target": 2000.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": "Rounded/Topcoded on PUF; Medians and means rounded to 4 significant digits in Table Creator"
+    },
+    {
+      "label": "Other interior",
+      "metric": "positive_cost_mean",
+      "codes": [
+        "31"
+      ],
+      "specification": "JOBTYPE = '31' and (JOBCOST gt 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 7894,
+      "puf_target": 7894.0,
+      "table_creator_target": 7853.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": "Rounded/Topcoded on PUF; Medians and means rounded to 4 significant digits in Table Creator"
+    },
+    {
+      "label": "Other interior",
+      "metric": "spending_thousands",
+      "codes": [
+        "31"
+      ],
+      "specification": "JOBTYPE = '31' and (JOBCOST ge 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 25226941,
+      "puf_target": 25226941.0,
+      "table_creator_target": 25290818.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": "Rounded/Topcoded on PUF"
+    },
+    {
+      "label": "Driveways/walkways",
+      "metric": "project_count_moe90_thousands",
+      "actual": 226,
+      "puf_target": 226.0,
+      "pass_check": true
+    },
+    {
+      "label": "Driveways/walkways",
+      "metric": "project_count_thousands",
+      "codes": [
+        "32"
+      ],
+      "specification": "JOBTYPE = '32'",
+      "actual": 4593,
+      "puf_target": 4593.0,
+      "table_creator_target": 4593.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": ""
+    },
+    {
+      "label": "Driveways/walkways",
+      "metric": "positive_cost_median",
+      "codes": [
+        "32"
+      ],
+      "specification": "JOBTYPE = '32' and (JOBCOST gt 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 2900,
+      "puf_target": 2900.0,
+      "table_creator_target": 2914.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": "Rounded/Topcoded on PUF; Medians and means rounded to 4 significant digits in Table Creator"
+    },
+    {
+      "label": "Driveways/walkways",
+      "metric": "positive_cost_mean",
+      "codes": [
+        "32"
+      ],
+      "specification": "JOBTYPE = '32' and (JOBCOST gt 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 5032,
+      "puf_target": 5032.0,
+      "table_creator_target": 5032.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": "Rounded/Topcoded on PUF; Medians and means rounded to 4 significant digits in Table Creator"
+    },
+    {
+      "label": "Driveways/walkways",
+      "metric": "spending_thousands",
+      "codes": [
+        "32"
+      ],
+      "specification": "JOBTYPE = '32' and (JOBCOST ge 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 20927112,
+      "puf_target": 20927112.0,
+      "table_creator_target": 20925349.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": "Rounded/Topcoded on PUF"
+    },
+    {
+      "label": "Fencing/walls",
+      "metric": "project_count_moe90_thousands",
+      "actual": 273,
+      "puf_target": 273.0,
+      "pass_check": true
+    },
+    {
+      "label": "Fencing/walls",
+      "metric": "project_count_thousands",
+      "codes": [
+        "33"
+      ],
+      "specification": "JOBTYPE = '33'",
+      "actual": 5700,
+      "puf_target": 5700.0,
+      "table_creator_target": 5700.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": ""
+    },
+    {
+      "label": "Fencing/walls",
+      "metric": "positive_cost_median",
+      "codes": [
+        "33"
+      ],
+      "specification": "JOBTYPE = '33' and (JOBCOST gt 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 2300,
+      "puf_target": 2300.0,
+      "table_creator_target": 2300.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": ""
+    },
+    {
+      "label": "Fencing/walls",
+      "metric": "positive_cost_mean",
+      "codes": [
+        "33"
+      ],
+      "specification": "JOBTYPE = '33' and (JOBCOST gt 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 3941,
+      "puf_target": 3941.0,
+      "table_creator_target": 3940.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": "Rounded/Topcoded on PUF; Medians and means rounded to 4 significant digits in Table Creator"
+    },
+    {
+      "label": "Fencing/walls",
+      "metric": "spending_thousands",
+      "codes": [
+        "33"
+      ],
+      "specification": "JOBTYPE = '33' and (JOBCOST ge 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 21831915,
+      "puf_target": 21831915.0,
+      "table_creator_target": 21828312.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": "Rounded/Topcoded on PUF"
+    },
+    {
+      "label": "Swimming pool/tennis court/recreational structures",
+      "metric": "project_count_moe90_thousands",
+      "actual": 140,
+      "puf_target": 140.0,
+      "pass_check": true
+    },
+    {
+      "label": "Swimming pool/tennis court/recreational structures",
+      "metric": "project_count_thousands",
+      "codes": [
+        "34"
+      ],
+      "specification": "JOBTYPE = '34'",
+      "actual": 1442,
+      "puf_target": 1442.0,
+      "table_creator_target": 1442.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": ""
+    },
+    {
+      "label": "Swimming pool/tennis court/recreational structures",
+      "metric": "positive_cost_median",
+      "codes": [
+        "34"
+      ],
+      "specification": "JOBTYPE = '34' and (JOBCOST gt 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 5000,
+      "puf_target": 5000.0,
+      "table_creator_target": 5000.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": ""
+    },
+    {
+      "label": "Swimming pool/tennis court/recreational structures",
+      "metric": "positive_cost_mean",
+      "codes": [
+        "34"
+      ],
+      "specification": "JOBTYPE = '34' and (JOBCOST gt 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 15300,
+      "puf_target": 15300.0,
+      "table_creator_target": 15290.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": "Rounded/Topcoded on PUF; Medians and means rounded to 4 significant digits in Table Creator"
+    },
+    {
+      "label": "Swimming pool/tennis court/recreational structures",
+      "metric": "spending_thousands",
+      "codes": [
+        "34"
+      ],
+      "specification": "JOBTYPE = '34' and (JOBCOST ge 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 21345181,
+      "puf_target": 21345181.0,
+      "table_creator_target": 21337670.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": "Rounded/Topcoded on PUF"
+    },
+    {
+      "label": "Shed/detached garage/other building",
+      "metric": "project_count_moe90_thousands",
+      "actual": 190,
+      "puf_target": 190.0,
+      "pass_check": true
+    },
+    {
+      "label": "Shed/detached garage/other building",
+      "metric": "project_count_thousands",
+      "codes": [
+        "35"
+      ],
+      "specification": "JOBTYPE = '35'",
+      "actual": 2967,
+      "puf_target": 2967.0,
+      "table_creator_target": 2967.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": ""
+    },
+    {
+      "label": "Shed/detached garage/other building",
+      "metric": "positive_cost_median",
+      "codes": [
+        "35"
+      ],
+      "specification": "JOBTYPE = '35' and (JOBCOST gt 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 3000,
+      "puf_target": 3000.0,
+      "table_creator_target": 3000.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": ""
+    },
+    {
+      "label": "Shed/detached garage/other building",
+      "metric": "positive_cost_mean",
+      "codes": [
+        "35"
+      ],
+      "specification": "JOBTYPE = '35' and (JOBCOST gt 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 7681,
+      "puf_target": 7681.0,
+      "table_creator_target": 7675.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": "Rounded/Topcoded on PUF; Medians and means rounded to 4 significant digits in Table Creator"
+    },
+    {
+      "label": "Shed/detached garage/other building",
+      "metric": "spending_thousands",
+      "codes": [
+        "35"
+      ],
+      "specification": "JOBTYPE = '35' and (JOBCOST ge 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 21541621,
+      "puf_target": 21541621.0,
+      "table_creator_target": 21525697.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": "Rounded/Topcoded on PUF"
+    },
+    {
+      "label": "Landscaping/sprinkler system",
+      "metric": "project_count_moe90_thousands",
+      "actual": 300,
+      "puf_target": 300.0,
+      "pass_check": true
+    },
+    {
+      "label": "Landscaping/sprinkler system",
+      "metric": "project_count_thousands",
+      "codes": [
+        "36"
+      ],
+      "specification": "JOBTYPE = '36'",
+      "actual": 7040,
+      "puf_target": 7040.0,
+      "table_creator_target": 7040.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": ""
+    },
+    {
+      "label": "Landscaping/sprinkler system",
+      "metric": "positive_cost_median",
+      "codes": [
+        "36"
+      ],
+      "specification": "JOBTYPE = '36' and (JOBCOST gt 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 1400,
+      "puf_target": 1400.0,
+      "table_creator_target": 1429.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": "Rounded/Topcoded on PUF; Medians and means rounded to 4 significant digits in Table Creator"
+    },
+    {
+      "label": "Landscaping/sprinkler system",
+      "metric": "positive_cost_mean",
+      "codes": [
+        "36"
+      ],
+      "specification": "JOBTYPE = '36' and (JOBCOST gt 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 3898,
+      "puf_target": 3898.0,
+      "table_creator_target": 3896.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": "Rounded/Topcoded on PUF; Medians and means rounded to 4 significant digits in Table Creator"
+    },
+    {
+      "label": "Landscaping/sprinkler system",
+      "metric": "spending_thousands",
+      "codes": [
+        "36"
+      ],
+      "specification": "JOBTYPE = '36' and (JOBCOST ge 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 26567011,
+      "puf_target": 26567011.0,
+      "table_creator_target": 26554494.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": "Rounded/Topcoded on PUF"
+    },
+    {
+      "label": "Other",
+      "metric": "project_count_moe90_thousands",
+      "actual": 176,
+      "puf_target": 176.0,
+      "pass_check": true
+    },
+    {
+      "label": "Other",
+      "metric": "project_count_thousands",
+      "codes": [
+        "37"
+      ],
+      "specification": "JOBTYPE = '37'",
+      "actual": 2070,
+      "puf_target": 2070.0,
+      "table_creator_target": 2070.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": ""
+    },
+    {
+      "label": "Other",
+      "metric": "positive_cost_median",
+      "codes": [
+        "37"
+      ],
+      "specification": "JOBTYPE = '37' and (JOBCOST gt 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 3000,
+      "puf_target": 3000.0,
+      "table_creator_target": 2700.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": "Rounded/Topcoded on PUF; Medians and means rounded to 4 significant digits in Table Creator"
+    },
+    {
+      "label": "Other",
+      "metric": "positive_cost_mean",
+      "codes": [
+        "37"
+      ],
+      "specification": "JOBTYPE = '37' and (JOBCOST gt 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 6200,
+      "puf_target": 6200.0,
+      "table_creator_target": 6074.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": "Rounded/Topcoded on PUF; Medians and means rounded to 4 significant digits in Table Creator"
+    },
+    {
+      "label": "Other",
+      "metric": "spending_thousands",
+      "codes": [
+        "37"
+      ],
+      "specification": "JOBTYPE = '37' and (JOBCOST ge 0 and (JOBDIY = '1' or JOBDIY = '2'))",
+      "actual": 11380310,
+      "puf_target": 11380310.0,
+      "table_creator_target": 11491323.0,
+      "pass_check": true,
+      "undefined_empty_domain": false,
+      "reason_for_puf_difference": "Rounded/Topcoded on PUF"
+    }
+  ],
+  "inputCsvHashes": {
+    "household.csv": "ea2ee307fa14b2723aab9453f89fe4c0cf803a839214fb5b36a74e07c770b9db",
+    "project.csv": "9efda82d10024a78f53018a2daaef46b58c6e22911f236587973c92b2c13ed49"
+  },
+  "officialControlsReproduced": true,
+  "originalWorkbookBytesAcquired": false,
+  "reportingConventions": {
+    "c16DollarCells": "Four significant digits, displayed as whole dollars in parsed workbook",
+    "controlMoe90CriticalValue": 1.645,
+    "criticalValueSource": "2023 AHS National Sample Design, Weighting, and Error Estimation, section5,90% critical factor",
+    "studyIntervals": "Unchanged: exact NormalDist90% critical value; source reporting convention only used to reproduce published rounded controls"
+  },
+  "note": "PUF controls are distinct from Table Creator IUF values. Empty cost domain remains undefined, not zero. C-16 control medians/means use JOBCOST>0; the original eight-category study separately retains nonnegative cost, as disclosed."
+}

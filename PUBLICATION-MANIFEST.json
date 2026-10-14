@@ -1,0 +1,239 @@
+{
+  "canonicalReport": "https://lonta.io/research/home-service-demand/",
+  "purpose": "Source-only reproducibility companion, company-authored, not independent coverage",
+  "sourceEdition": "DataLumos217661/V2",
+  "rawIdentifiersIncluded": false,
+  "clientObservations": 0,
+  "originalPublicBundleFiles": [
+    {
+      "path": "LICENSE-CODE.txt",
+      "originalZipBytes": 1059,
+      "originalZipSha256": "d566d786277d31743c0d915cd4bcbeaacf9437a050fe15412826c992c85516b0",
+      "repositorySourceUnchanged": true
+    },
+    {
+      "path": "README.md",
+      "originalZipBytes": 3939,
+      "originalZipSha256": "0d0e80fd0095730f2b90563092ab5a0efbb6c353c3a4f2423e304c9ce260f9a5",
+      "repositorySourceUnchanged": false
+    },
+    {
+      "path": "analysis/private-analysis-plan.json",
+      "originalZipBytes": 5961,
+      "originalZipSha256": "a379f153bad9a6ae11c7309bdbaa366448141115a078d3d110eac1ca53dabb79",
+      "repositorySourceUnchanged": true
+    },
+    {
+      "path": "analysis/private_demand_analysis.py",
+      "originalZipBytes": 2978,
+      "originalZipSha256": "9b5fe563aed7c58f462b61e1ca1b0b1d9170766cec24cab56c138f0a724ce2df",
+      "repositorySourceUnchanged": true
+    },
+    {
+      "path": "analysis/publication-readiness.json",
+      "originalZipBytes": 1748,
+      "originalZipSha256": "a765ad81659e17e3b99d10a8d9db98933573e383384deb662d5d8f66ae102fc4",
+      "repositorySourceUnchanged": true
+    },
+    {
+      "path": "analysis/publication_payload.py",
+      "originalZipBytes": 3097,
+      "originalZipSha256": "b14fb5c561930392218738627cc5e16261fcaba113b86e5cebc5e14ecadfd96c",
+      "repositorySourceUnchanged": true
+    },
+    {
+      "path": "analysis/reproduce_official_controls.py",
+      "originalZipBytes": 6552,
+      "originalZipSha256": "58f533582da7d2955b8fa7e156bdb72bad476bbac5254660fdd21111a4821dda",
+      "repositorySourceUnchanged": true
+    },
+    {
+      "path": "analysis/source_identity.py",
+      "originalZipBytes": 971,
+      "originalZipSha256": "a4417d68aaa9add25e8535c3f12154e499bf0a2e3685e0a436290e38bf7c6278",
+      "repositorySourceUnchanged": true
+    },
+    {
+      "path": "analysis/survey_core.py",
+      "originalZipBytes": 13474,
+      "originalZipSha256": "5fb71fdef8658e2dc49093ed32b9ec47aa23ffec2b2a076a1bbb6acf402736f1",
+      "repositorySourceUnchanged": true
+    },
+    {
+      "path": "analysis/test_publication_payload.py",
+      "originalZipBytes": 2428,
+      "originalZipSha256": "05186ad7cc953860eebd280edfdea53dc2bdac97f84da0ba8ab197be5dc5b101",
+      "repositorySourceUnchanged": true
+    },
+    {
+      "path": "analysis/test_reuse_context.py",
+      "originalZipBytes": 3147,
+      "originalZipSha256": "b20d6410d51af9abc76b050287760323002cbd4089451d5645d66d802efdfb7b",
+      "repositorySourceUnchanged": true
+    },
+    {
+      "path": "analysis/test_source_identity.py",
+      "originalZipBytes": 1502,
+      "originalZipSha256": "8b537379932c71caba1dfc0403705d7c60e96d609cebf54bdf31a0f5459e40d6",
+      "repositorySourceUnchanged": true
+    },
+    {
+      "path": "analysis/test_survey_core.py",
+      "originalZipBytes": 12595,
+      "originalZipSha256": "7c3e11dd0adb1d75b2e92142657621305e8def1ebe8126c86e4a4d79de91f2db",
+      "repositorySourceUnchanged": true
+    },
+    {
+      "path": "analysis/test_workbook_controls.py",
+      "originalZipBytes": 2734,
+      "originalZipSha256": "ead215620a37578e0687b11da18b9e10c3268a68a0492c9a4f753f03606a7091",
+      "repositorySourceUnchanged": true
+    },
+    {
+      "path": "analysis/workbook_controls.py",
+      "originalZipBytes": 2816,
+      "originalZipSha256": "5640d111672a0913129085a47e8aaab27db6551c6268beb790df68cf8e7cdf21",
+      "repositorySourceUnchanged": true
+    },
+    {
+      "path": "figures/01-project-frequency.png",
+      "originalZipBytes": 135329,
+      "originalZipSha256": "ccadcf66e7371c08b9506cc160bd3297fbc13c1674a3b060ba59af2a6500a898",
+      "repositorySourceUnchanged": true
+    },
+    {
+      "path": "figures/01-project-frequency.svg",
+      "originalZipBytes": 95971,
+      "originalZipSha256": "6ce996c85753f8e71bac8adf955ff5c700f4794c11b48e9ea47966c0dbac0aae",
+      "repositorySourceUnchanged": true
+    },
+    {
+      "path": "figures/02-project-spending-shares.png",
+      "originalZipBytes": 125119,
+      "originalZipSha256": "dac6b7c720c8c3b84ff49f04f0def1d2d48bc08c97605d9fa9257a4894aac747",
+      "repositorySourceUnchanged": true
+    },
+    {
+      "path": "figures/02-project-spending-shares.svg",
+      "originalZipBytes": 93582,
+      "originalZipSha256": "12379f8f72beebe38a6f3fec9df002b3c99a10415bbee7c4faf3c7d1cc3bcd91",
+      "repositorySourceUnchanged": true
+    },
+    {
+      "path": "figures/03-cost-distributions.png",
+      "originalZipBytes": 153196,
+      "originalZipSha256": "2f09cf69f6aa1dbe67d7dc19c2b827dd04445f23c0a460b3f70bf0fd5651fc38",
+      "repositorySourceUnchanged": true
+    },
+    {
+      "path": "figures/03-cost-distributions.svg",
+      "originalZipBytes": 103724,
+      "originalZipSha256": "eb633aaf35506b18887ca301611759e68257bcaa4fb8c4791ee986afb652e995",
+      "repositorySourceUnchanged": true
+    },
+    {
+      "path": "figures/04-home-vintage.png",
+      "originalZipBytes": 140039,
+      "originalZipSha256": "7512e9a7edea6c39b9f7baf795994b1dff0ba43a0c0466434c47788b0a70dba7",
+      "repositorySourceUnchanged": true
+    },
+    {
+      "path": "figures/04-home-vintage.svg",
+      "originalZipBytes": 110614,
+      "originalZipSha256": "9f5695e35c9650037d4b615a48b801a54d4f458946c4bc9faf40a29b70a6ad24",
+      "repositorySourceUnchanged": true
+    },
+    {
+      "path": "lonta-home-service-demand.html",
+      "originalZipBytes": 1034233,
+      "originalZipSha256": "6831cb511f510d538e31b8dd0b2ebc73f4b73d6a46c48ab9559388766fbf0dfb",
+      "repositorySourceUnchanged": true
+    },
+    {
+      "path": "lonta-home-service-demand.ipynb",
+      "originalZipBytes": 777791,
+      "originalZipSha256": "0c98c4c8e757f586b740eafb02261c3e8ca004e295e322642d0663cf6176ae47",
+      "repositorySourceUnchanged": true
+    },
+    {
+      "path": "render_figures.py",
+      "originalZipBytes": 5912,
+      "originalZipSha256": "bb801174b2217da6e40886ee258e916ffd075a595b31a146b959af4f31975bc5",
+      "repositorySourceUnchanged": true
+    },
+    {
+      "path": "reproduce.py",
+      "originalZipBytes": 9604,
+      "originalZipSha256": "fd9a6d00f33862b7d37d31f9ff9c096bb60764e50e980900449c6734e4a1fb1b",
+      "repositorySourceUnchanged": true
+    },
+    {
+      "path": "requirements.txt",
+      "originalZipBytes": 115,
+      "originalZipSha256": "8b9d03a3323f97c6da1d3f92da6ea040fddc5e69bfde3872a47e37ded1d57687",
+      "repositorySourceUnchanged": true
+    },
+    {
+      "path": "results/adjusted-vintage.csv",
+      "originalZipBytes": 10740,
+      "originalZipSha256": "3c7f0eb60d3f8a16cf2bc08bd7f3f919f2cb271d63d7397a10032a9505787aae",
+      "repositorySourceUnchanged": true
+    },
+    {
+      "path": "results/categories.csv",
+      "originalZipBytes": 8005,
+      "originalZipSha256": "c8d90b9f4291dc901176e8e72d6be5a584922e155cb8d554f1afc7557463310e",
+      "repositorySourceUnchanged": true
+    },
+    {
+      "path": "results/data.json",
+      "originalZipBytes": 33159,
+      "originalZipSha256": "ff2cc03ad5601947177aad337b8a631ad78f67f1d3067a582733a2de08e4278d",
+      "repositorySourceUnchanged": true
+    },
+    {
+      "path": "results/official-control-reproduction.csv",
+      "originalZipBytes": 27942,
+      "originalZipSha256": "c0dd4c8cb2049f517914cfdba7ab8a4e994171b1097078cb8312e01870bbc05f",
+      "repositorySourceUnchanged": true
+    },
+    {
+      "path": "results/official-control-reproduction.json",
+      "originalZipBytes": 71790,
+      "originalZipSha256": "c2cc25bc731e06715667b173f82c529728d75a57d7c87e2021dad3f263d59277",
+      "repositorySourceUnchanged": true
+    },
+    {
+      "path": "results/vintage.csv",
+      "originalZipBytes": 14246,
+      "originalZipSha256": "3ea71088e2ac1d892bb55bae8238002106f97ea1a94bb3ebed90727d49a6e330",
+      "repositorySourceUnchanged": true
+    },
+    {
+      "path": "service-mix-worksheet.txt",
+      "originalZipBytes": 1665,
+      "originalZipSha256": "f0294309d36b25b1a8690a98ef1a6c216d43aaec87245c7adb51f2570e53da8f",
+      "repositorySourceUnchanged": true
+    },
+    {
+      "path": "source-notes/official-professional-mapping.md",
+      "originalZipBytes": 615,
+      "originalZipSha256": "459e13a1055c44fdb8d2f36a8b06de0d871e4b2429ef6ffdf0bbf0ba0f0af840",
+      "repositorySourceUnchanged": true
+    },
+    {
+      "path": "source-notes/official-verification-selected-sections.md",
+      "originalZipBytes": 45825,
+      "originalZipSha256": "f8a2f4f6b27c166576e1a04923ca78c5d4c4da465c29bd9f2ed527c2481de2a7",
+      "repositorySourceUnchanged": true
+    }
+  ],
+  "repositoryAdditions": [
+    ".gitignore",
+    "LICENSE",
+    "CITATION.md",
+    "REUSER-NOTES.md",
+    "PUBLICATION-MANIFEST.json"
+  ],
+  "readmeAppendOnly": true
+}

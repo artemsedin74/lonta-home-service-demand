@@ -1,0 +1,32 @@
+Lonta Research — Service mix hypothesis worksheet v1.0
+Source: https://lonta.io/research/home-service-demand/
+2023 AHS historical household projects are context, not local advertising ROI.
+
+1. One question, written before the test
+Service line / exact job scope:
+Service area and supported capacity:
+Message or offer to test; why the research suggests a hypothesis:
+Alternative explanation (equipment stock, building type, price, season, referrals):
+
+2. What every inquiry needs
+Inquiry ID; arrival date; requested job scope; serviceable yes/no/unknown;
+new/returning/unknown customer; quote amount and date; accepted work and date;
+completed work and date; collected revenue and date; variable job costs;
+source and attribution rule. Do not collect housing/health/identity data you do not need.
+
+3. Set rules in advance
+Included channels and media-only/fee-inclusive cost definition:
+Comparable lead-age window and eligible count:
+Primary outcome (accepted/completed/paid; choose one):
+Guardrails (available technician hours, dispatch loss, margin, phone coverage):
+Observation period; minimum local sample; stop/change decision:
+Record all outcomes, including unknowns and failed dispatches.
+
+4. Read the result
+Did job scope/customer mix change? Were lead ages and attribution comparable?
+How much was collected after variable costs? What remains uncertain?
+An AHS median is neither a current quote nor a margin/ad-budget ceiling.
+The worksheet and research are usable without buying Lonta.
+
+Prepared with Codex. No client outcomes, human review or causal effect asserted.
+Lonta original worksheet: CC BY 4.0. Underlying survey sources retain their own terms.

@@ -1,0 +1,25 @@
+{
+  "reviewedAtUtc": "2026-10-12T19:15:10.017381+00:00",
+  "decision": "READY_FOR_PUBLICATION_WITH_DISCLOSED_ARCHIVAL_PROVENANCE",
+  "datasetIdentity": "DataLumos217661/V2 AHS2023National PUF archival copy",
+  "archiveEditionVerified": true,
+  "archiveSourceHashPinned": true,
+  "businessFieldSemanticsCrosschecked": true,
+  "officialPufControlsReproduced": true,
+  "controlComparisons": 183,
+  "controlsReceipt": "analysis/official-control-reproduction.json",
+  "professionalCodePrimarySource": "source-notes/official-professional-mapping.md",
+  "censusOriginBinaryByteMatchVerified": false,
+  "censusDirectDownloadClaimAllowed": false,
+  "censusReleaseSchemaCompatibility": "Consistent with Jan2025v1.1 additions; not a certification of original Census binary identity",
+  "publicationSourceNamingRule": "Cite the actual DataLumosV2 archival copy and Census2023 definition/control sources. Do not call this a directly downloaded/bitwise-verified Census v1.1 file.",
+  "ruling": "The controlling source edition is the authenticated and hashed DataLumosV2 archive. Its identity is established; 183primary-workbook figures and business-field semantics corroborate it. Publication can cite this known archival edition with explicit original-byte limitation, without substituting or inventing a Census-origin digest.",
+  "scientificLimits": [
+    "No causal advertising or individual targeting claim",
+    "Not current2026prices or all emergency/routine calls",
+    "Professional proxy is majority work outside household, not paid-invoice verification",
+    "Pointwise90%normal intervals, no multiplicity correction",
+    "Small prespecified cell suppressed consistently",
+    "No original client observations or independent/human-review claim"
+  ]
+}

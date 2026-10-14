@@ -1,0 +1,1119 @@
+{
+  "version": "1.0",
+  "title": "Lonta Home-Service Demand Study: home age, professional work and spending",
+  "canonical": "https://lonta.io/research/home-service-demand/",
+  "publisher": "Lonta AI",
+  "prepared": "2026-10-12",
+  "dataset": "2023 American Housing Survey National PUF, DataLumos 217661/V2 archival copy",
+  "archiveUrl": "https://doi.org/10.3886/E217661V2",
+  "inputCsvSha256": {
+    "household.csv": "ea2ee307fa14b2723aab9453f89fe4c0cf803a839214fb5b36a74e07c770b9db",
+    "project.csv": "9efda82d10024a78f53018a2daaef46b58c6e22911f236587973c92b2c13ed49"
+  },
+  "censusDirectBinaryByteMatchVerified": false,
+  "universe": "US occupied owner housing units, including homes with no project",
+  "window": "Previous 24 months at the 2023 interview; not calendar-year 2023 or a 2026 forecast",
+  "cost": "Nominal reported job cost, including known zero; materials and insurance payments may be included; household labour excluded",
+  "professional": "JOBDIY 2: most work was not done by a household member; not verified paid contractor invoices",
+  "uncertainty": "Pointwise 90% normal intervals from 160 AHS Fay BRR replicates; no multiplicity correction",
+  "sourceHousingUnitRows": 55669,
+  "ownerHousingUnitRows": 28192,
+  "projectRows": 44689,
+  "ownersWithoutProjects": 11669,
+  "weightedOwnerHomes": 86852744.62161517,
+  "controls": {
+    "comparisons": 183,
+    "passed": 183,
+    "failed": 0,
+    "source": "https://www2.census.gov/programs-surveys/ahs/2023/AHS%202023%20Table%20Specifications%20and%20PUF%20Estimates%20for%20User%20Verification.xlsx",
+    "reportingConventions": {
+      "c16DollarCells": "Four significant digits, displayed as whole dollars in parsed workbook",
+      "controlMoe90CriticalValue": 1.645,
+      "criticalValueSource": "2023 AHS National Sample Design, Weighting, and Error Estimation, section5,90% critical factor",
+      "studyIntervals": "Unchanged: exact NormalDist90% critical value; source reporting convention only used to reproduce published rounded controls"
+    }
+  },
+  "categories": [
+    {
+      "code": "20",
+      "project_rows": 962,
+      "professional_project_rows": 588,
+      "professional_home_rows": 588,
+      "professional_known_cost_rows": 588,
+      "professional_missing_cost_rows": 0,
+      "missing_cost_project_rows": 0,
+      "unknown_diy_project_rows": 0,
+      "cost_one_project_rows": 0,
+      "sensitivities": {
+        "completed_only_median": {
+          "rows": 560,
+          "estimate": 2000.0
+        },
+        "cost_flag_zero_median": {
+          "rows": 443,
+          "estimate": 2000.0
+        },
+        "exclude_cost_one_median": {
+          "rows": 588,
+          "estimate": 2000.0
+        }
+      },
+      "label": "Insulation",
+      "full_label": "Added or replaced insulation",
+      "frequency_per1000": {
+        "estimate": 20.129674287977995,
+        "lower": 18.36725014745386,
+        "upper": 21.89209842850213,
+        "confidence": 0.9
+      },
+      "professional_project_share_pct": {
+        "estimate": 57.19486502530541,
+        "lower": 53.99390631813906,
+        "upper": 60.39582373247176,
+        "confidence": 0.9
+      },
+      "professional_spending_share_pct": {
+        "estimate": 79.0634788723933,
+        "lower": 75.03916216420215,
+        "upper": 83.08779558058446,
+        "confidence": 0.9
+      },
+      "q1_cost": {
+        "estimate": 1000.0,
+        "lower": 759.3646040660747,
+        "upper": 1240.6353959339253,
+        "confidence": 0.9
+      },
+      "median_cost": {
+        "estimate": 2000.0,
+        "lower": 1649.1407302616317,
+        "upper": 2350.8592697383683,
+        "confidence": 0.9
+      },
+      "q3_cost": {
+        "estimate": 3500.0,
+        "lower": 2821.8094757398776,
+        "upper": 4178.190524260122,
+        "confidence": 0.9
+      },
+      "spending_minus_count_share_pp": {
+        "estimate": 21.868613847087893,
+        "lower": 18.157804550915177,
+        "upper": 25.57942314326061,
+        "confidence": 0.9
+      }
+    },
+    {
+      "code": "21",
+      "project_rows": 1170,
+      "professional_project_rows": 785,
+      "professional_home_rows": 785,
+      "professional_known_cost_rows": 785,
+      "professional_missing_cost_rows": 0,
+      "missing_cost_project_rows": 0,
+      "unknown_diy_project_rows": 0,
+      "cost_one_project_rows": 0,
+      "sensitivities": {
+        "completed_only_median": {
+          "rows": 739,
+          "estimate": 1600.0
+        },
+        "cost_flag_zero_median": {
+          "rows": 614,
+          "estimate": 1500.0
+        },
+        "exclude_cost_one_median": {
+          "rows": 785,
+          "estimate": 1600.0
+        }
+      },
+      "label": "Interior water pipes",
+      "full_label": "Added or replaced interior water pipes",
+      "frequency_per1000": {
+        "estimate": 26.43638168116249,
+        "lower": 24.4583759213032,
+        "upper": 28.41438744102178,
+        "confidence": 0.9
+      },
+      "professional_project_share_pct": {
+        "estimate": 63.979308996655526,
+        "lower": 61.42941140532383,
+        "upper": 66.52920658798722,
+        "confidence": 0.9
+      },
+      "professional_spending_share_pct": {
+        "estimate": 89.35274437238083,
+        "lower": 86.60990067986825,
+        "upper": 92.0955880648934,
+        "confidence": 0.9
+      },
+      "q1_cost": {
+        "estimate": 500.0,
+        "lower": 399.27369781006655,
+        "upper": 600.7263021899334,
+        "confidence": 0.9
+      },
+      "median_cost": {
+        "estimate": 1600.0,
+        "lower": 1294.4819986215352,
+        "upper": 1905.5180013784648,
+        "confidence": 0.9
+      },
+      "q3_cost": {
+        "estimate": 4000.0,
+        "lower": 3574.2401951517822,
+        "upper": 4425.759804848218,
+        "confidence": 0.9
+      },
+      "spending_minus_count_share_pp": {
+        "estimate": 25.3734353757253,
+        "lower": 22.043011059916463,
+        "upper": 28.703859691534138,
+        "confidence": 0.9
+      }
+    },
+    {
+      "code": "22",
+      "project_rows": 3136,
+      "professional_project_rows": 1734,
+      "professional_home_rows": 1734,
+      "professional_known_cost_rows": 1734,
+      "professional_missing_cost_rows": 0,
+      "missing_cost_project_rows": 0,
+      "unknown_diy_project_rows": 0,
+      "cost_one_project_rows": 0,
+      "sensitivities": {
+        "completed_only_median": {
+          "rows": 1632,
+          "estimate": 860.0
+        },
+        "cost_flag_zero_median": {
+          "rows": 1321,
+          "estimate": 800.0
+        },
+        "exclude_cost_one_median": {
+          "rows": 1734,
+          "estimate": 860.0
+        }
+      },
+      "label": "Plumbing fixtures",
+      "full_label": "Added or replaced plumbing fixtures",
+      "frequency_per1000": {
+        "estimate": 60.012057927983975,
+        "lower": 57.15606684056225,
+        "upper": 62.8680490154057,
+        "confidence": 0.9
+      },
+      "professional_project_share_pct": {
+        "estimate": 52.553479898609645,
+        "lower": 50.976951840854674,
+        "upper": 54.130007956364615,
+        "confidence": 0.9
+      },
+      "professional_spending_share_pct": {
+        "estimate": 74.82535694366882,
+        "lower": 71.60592438649995,
+        "upper": 78.0447895008377,
+        "confidence": 0.9
+      },
+      "q1_cost": {
+        "estimate": 400.0,
+        "lower": 394.7985161212444,
+        "upper": 405.2014838787556,
+        "confidence": 0.9
+      },
+      "median_cost": {
+        "estimate": 860.0,
+        "lower": 778.5008639321604,
+        "upper": 941.4991360678396,
+        "confidence": 0.9
+      },
+      "q3_cost": {
+        "estimate": 2000.0,
+        "lower": 1827.4862962108532,
+        "upper": 2172.513703789147,
+        "confidence": 0.9
+      },
+      "spending_minus_count_share_pp": {
+        "estimate": 22.271877045059178,
+        "lower": 19.43474081186438,
+        "upper": 25.109013278253975,
+        "confidence": 0.9
+      }
+    },
+    {
+      "code": "23",
+      "project_rows": 2097,
+      "professional_project_rows": 1497,
+      "professional_home_rows": 1497,
+      "professional_known_cost_rows": 1497,
+      "professional_missing_cost_rows": 0,
+      "missing_cost_project_rows": 0,
+      "unknown_diy_project_rows": 0,
+      "cost_one_project_rows": 0,
+      "sensitivities": {
+        "completed_only_median": {
+          "rows": 1418,
+          "estimate": 1500.0
+        },
+        "cost_flag_zero_median": {
+          "rows": 1231,
+          "estimate": 1300.0
+        },
+        "exclude_cost_one_median": {
+          "rows": 1497,
+          "estimate": 1500.0
+        }
+      },
+      "label": "Electrical wiring / panels",
+      "full_label": "Added or replaced electrical wiring, fuse boxes, breaker panels, or built-in lighting",
+      "frequency_per1000": {
+        "estimate": 52.077554380577496,
+        "lower": 49.257436741327645,
+        "upper": 54.89767201982735,
+        "confidence": 0.9
+      },
+      "professional_project_share_pct": {
+        "estimate": 68.58054550225403,
+        "lower": 66.57847978249146,
+        "upper": 70.5826112220166,
+        "confidence": 0.9
+      },
+      "professional_spending_share_pct": {
+        "estimate": 89.79469190653242,
+        "lower": 87.71967449918706,
+        "upper": 91.86970931387778,
+        "confidence": 0.9
+      },
+      "q1_cost": {
+        "estimate": 550.0,
+        "lower": 413.71516660917473,
+        "upper": 686.2848333908253,
+        "confidence": 0.9
+      },
+      "median_cost": {
+        "estimate": 1500.0,
+        "lower": 1431.1908360415055,
+        "upper": 1568.8091639584945,
+        "confidence": 0.9
+      },
+      "q3_cost": {
+        "estimate": 3400.0,
+        "lower": 2683.9689360432185,
+        "upper": 4116.0310639567815,
+        "confidence": 0.9
+      },
+      "spending_minus_count_share_pp": {
+        "estimate": 21.214146404278395,
+        "lower": 18.97378451552726,
+        "upper": 23.45450829302953,
+        "confidence": 0.9
+      }
+    },
+    {
+      "code": "26",
+      "project_rows": 2290,
+      "professional_project_rows": 2050,
+      "professional_home_rows": 2050,
+      "professional_known_cost_rows": 2050,
+      "professional_missing_cost_rows": 0,
+      "missing_cost_project_rows": 0,
+      "unknown_diy_project_rows": 0,
+      "cost_one_project_rows": 0,
+      "sensitivities": {
+        "completed_only_median": {
+          "rows": 2003,
+          "estimate": 6600.0
+        },
+        "cost_flag_zero_median": {
+          "rows": 1731,
+          "estimate": 6300.0
+        },
+        "exclude_cost_one_median": {
+          "rows": 2050,
+          "estimate": 6500.0
+        }
+      },
+      "label": "Central A/C",
+      "full_label": "Added or replaced central air conditioning",
+      "frequency_per1000": {
+        "estimate": 69.27343095729093,
+        "lower": 66.42763680381775,
+        "upper": 72.1192251107641,
+        "confidence": 0.9
+      },
+      "professional_project_share_pct": {
+        "estimate": 88.32048228000644,
+        "lower": 86.92349312418882,
+        "upper": 89.71747143582407,
+        "confidence": 0.9
+      },
+      "professional_spending_share_pct": {
+        "estimate": 91.19915774629983,
+        "lower": 89.72410101153964,
+        "upper": 92.67421448106002,
+        "confidence": 0.9
+      },
+      "q1_cost": {
+        "estimate": 4000.0,
+        "lower": 3917.7573186524264,
+        "upper": 4082.2426813475736,
+        "confidence": 0.9
+      },
+      "median_cost": {
+        "estimate": 6500.0,
+        "lower": 5873.118682119687,
+        "upper": 7126.881317880313,
+        "confidence": 0.9
+      },
+      "q3_cost": {
+        "estimate": 9500.0,
+        "lower": 8788.70777741083,
+        "upper": 10211.29222258917,
+        "confidence": 0.9
+      },
+      "spending_minus_count_share_pp": {
+        "estimate": 2.8786754662933873,
+        "lower": 1.9052978407584447,
+        "upper": 3.85205309182833,
+        "confidence": 0.9
+      }
+    },
+    {
+      "code": "27",
+      "project_rows": 2020,
+      "professional_project_rows": 1764,
+      "professional_home_rows": 1764,
+      "professional_known_cost_rows": 1764,
+      "professional_missing_cost_rows": 0,
+      "missing_cost_project_rows": 0,
+      "unknown_diy_project_rows": 0,
+      "cost_one_project_rows": 0,
+      "sensitivities": {
+        "completed_only_median": {
+          "rows": 1722,
+          "estimate": 4500.0
+        },
+        "cost_flag_zero_median": {
+          "rows": 1371,
+          "estimate": 4400.0
+        },
+        "exclude_cost_one_median": {
+          "rows": 1764,
+          "estimate": 4500.0
+        }
+      },
+      "label": "Built-in heating",
+      "full_label": "Added or replaced built-in heating equipment",
+      "frequency_per1000": {
+        "estimate": 59.65412916481495,
+        "lower": 57.12345851499296,
+        "upper": 62.18479981463693,
+        "confidence": 0.9
+      },
+      "professional_project_share_pct": {
+        "estimate": 86.48758030383257,
+        "lower": 85.00365832847474,
+        "upper": 87.9715022791904,
+        "confidence": 0.9
+      },
+      "professional_spending_share_pct": {
+        "estimate": 92.02438009864947,
+        "lower": 90.37499943872378,
+        "upper": 93.67376075857517,
+        "confidence": 0.9
+      },
+      "q1_cost": {
+        "estimate": 2000.0,
+        "lower": 1936.295092958681,
+        "upper": 2063.704907041319,
+        "confidence": 0.9
+      },
+      "median_cost": {
+        "estimate": 4500.0,
+        "lower": 4395.970322424889,
+        "upper": 4604.029677575111,
+        "confidence": 0.9
+      },
+      "q3_cost": {
+        "estimate": 7000.0,
+        "lower": 6723.537339631199,
+        "upper": 7276.462660368801,
+        "confidence": 0.9
+      },
+      "spending_minus_count_share_pp": {
+        "estimate": 5.5367997948169005,
+        "lower": 3.9641609315064947,
+        "upper": 7.109438658127306,
+        "confidence": 0.9
+      }
+    },
+    {
+      "code": "28",
+      "project_rows": 149,
+      "professional_project_rows": 129,
+      "professional_home_rows": 129,
+      "professional_known_cost_rows": 126,
+      "professional_missing_cost_rows": 3,
+      "missing_cost_project_rows": 4,
+      "unknown_diy_project_rows": 0,
+      "cost_one_project_rows": 0,
+      "sensitivities": {
+        "completed_only_median": {
+          "rows": 121,
+          "estimate": 4300.0
+        },
+        "cost_flag_zero_median": {
+          "rows": 103,
+          "estimate": 5000.0
+        },
+        "exclude_cost_one_median": {
+          "rows": 126,
+          "estimate": 4500.0
+        }
+      },
+      "label": "Septic tanks",
+      "full_label": "Added or replaced septic tank",
+      "frequency_per1000": {
+        "estimate": 5.452287278817025,
+        "lower": 4.610104834360385,
+        "upper": 6.294469723273664,
+        "confidence": 0.9
+      },
+      "professional_project_share_pct": {
+        "estimate": 86.39217834387217,
+        "lower": 81.23167023070526,
+        "upper": 91.55268645703909,
+        "confidence": 0.9
+      },
+      "professional_spending_share_pct": {
+        "estimate": 89.95255600750936,
+        "lower": 82.15210153899046,
+        "upper": 97.75301047602825,
+        "confidence": 0.9
+      },
+      "q1_cost": {
+        "estimate": 2000.0,
+        "lower": 629.2338168494007,
+        "upper": 3370.7661831505993,
+        "confidence": 0.9
+      },
+      "median_cost": {
+        "estimate": 4500.0,
+        "lower": 3125.2919936635108,
+        "upper": 5874.708006336489,
+        "confidence": 0.9
+      },
+      "q3_cost": {
+        "estimate": 9800.0,
+        "lower": 7502.645240047454,
+        "upper": 12097.354759952546,
+        "confidence": 0.9
+      },
+      "spending_minus_count_share_pp": {
+        "estimate": 3.5603776636371833,
+        "lower": -4.077513865125189,
+        "upper": 11.198269192399556,
+        "confidence": 0.9
+      }
+    },
+    {
+      "code": "29",
+      "project_rows": 2629,
+      "professional_project_rows": 1847,
+      "professional_home_rows": 1847,
+      "professional_known_cost_rows": 1847,
+      "professional_missing_cost_rows": 0,
+      "missing_cost_project_rows": 0,
+      "unknown_diy_project_rows": 0,
+      "cost_one_project_rows": 0,
+      "sensitivities": {
+        "completed_only_median": {
+          "rows": 1804,
+          "estimate": 1300.0
+        },
+        "cost_flag_zero_median": {
+          "rows": 1608,
+          "estimate": 1200.0
+        },
+        "exclude_cost_one_median": {
+          "rows": 1847,
+          "estimate": 1300.0
+        }
+      },
+      "label": "Water heaters",
+      "full_label": "Added or replaced water heater",
+      "frequency_per1000": {
+        "estimate": 59.28306348214141,
+        "lower": 56.858532059957454,
+        "upper": 61.70759490432536,
+        "confidence": 0.9
+      },
+      "professional_project_share_pct": {
+        "estimate": 65.532215709649,
+        "lower": 63.88987831551249,
+        "upper": 67.1745531037855,
+        "confidence": 0.9
+      },
+      "professional_spending_share_pct": {
+        "estimate": 80.67330630691097,
+        "lower": 78.91281628642581,
+        "upper": 82.43379632739614,
+        "confidence": 0.9
+      },
+      "q1_cost": {
+        "estimate": 800.0,
+        "lower": 700.5237456306584,
+        "upper": 899.4762543693416,
+        "confidence": 0.9
+      },
+      "median_cost": {
+        "estimate": 1300.0,
+        "lower": 1206.2289158332374,
+        "upper": 1393.7710841667626,
+        "confidence": 0.9
+      },
+      "q3_cost": {
+        "estimate": 2000.0,
+        "lower": 2000.0,
+        "upper": 2000.0,
+        "confidence": 0.9
+      },
+      "spending_minus_count_share_pp": {
+        "estimate": 15.141090597261979,
+        "lower": 13.607478471193863,
+        "upper": 16.674702723330096,
+        "confidence": 0.9
+      }
+    }
+  ],
+  "vintage": [
+    {
+      "code": "20",
+      "category": "Insulation",
+      "vintage": "pre_1980",
+      "household_rows": 13672,
+      "event_rows": 364,
+      "estimate": 25.07851791591432,
+      "lower": 22.6663028803032,
+      "upper": 27.490732951525437,
+      "confidence": 0.9,
+      "suppressed": false,
+      "suppression_reason": null
+    },
+    {
+      "code": "20",
+      "category": "Insulation",
+      "vintage": "1980_1999",
+      "household_rows": 7608,
+      "event_rows": 146,
+      "estimate": 18.44317672165945,
+      "lower": 15.736049230093617,
+      "upper": 21.150304213225287,
+      "confidence": 0.9,
+      "suppressed": false,
+      "suppression_reason": null
+    },
+    {
+      "code": "20",
+      "category": "Insulation",
+      "vintage": "2000_or_later",
+      "household_rows": 6912,
+      "event_rows": 78,
+      "estimate": 12.339719587916662,
+      "lower": 9.535206375642067,
+      "upper": 15.144232800191256,
+      "confidence": 0.9,
+      "suppressed": false,
+      "suppression_reason": null
+    },
+    {
+      "code": "21",
+      "category": "Interior water pipes",
+      "vintage": "pre_1980",
+      "household_rows": 13672,
+      "event_rows": 477,
+      "estimate": 33.33115408650767,
+      "lower": 30.254256494639726,
+      "upper": 36.40805167837561,
+      "confidence": 0.9,
+      "suppressed": false,
+      "suppression_reason": null
+    },
+    {
+      "code": "21",
+      "category": "Interior water pipes",
+      "vintage": "1980_1999",
+      "household_rows": 7608,
+      "event_rows": 223,
+      "estimate": 26.696957171437745,
+      "lower": 23.269671202827592,
+      "upper": 30.1242431400479,
+      "confidence": 0.9,
+      "suppressed": false,
+      "suppression_reason": null
+    },
+    {
+      "code": "21",
+      "category": "Interior water pipes",
+      "vintage": "2000_or_later",
+      "household_rows": 6912,
+      "event_rows": 85,
+      "estimate": 12.883302485392072,
+      "lower": 10.31423164799599,
+      "upper": 15.452373322788153,
+      "confidence": 0.9,
+      "suppressed": false,
+      "suppression_reason": null
+    },
+    {
+      "code": "22",
+      "category": "Plumbing fixtures",
+      "vintage": "pre_1980",
+      "household_rows": 13672,
+      "event_rows": 941,
+      "estimate": 66.76222329835385,
+      "lower": 62.9643006472879,
+      "upper": 70.56014594941979,
+      "confidence": 0.9,
+      "suppressed": false,
+      "suppression_reason": null
+    },
+    {
+      "code": "22",
+      "category": "Plumbing fixtures",
+      "vintage": "1980_1999",
+      "household_rows": 7608,
+      "event_rows": 484,
+      "estimate": 60.55878774282766,
+      "lower": 55.255916461069454,
+      "upper": 65.86165902458586,
+      "confidence": 0.9,
+      "suppressed": false,
+      "suppression_reason": null
+    },
+    {
+      "code": "22",
+      "category": "Plumbing fixtures",
+      "vintage": "2000_or_later",
+      "household_rows": 6912,
+      "event_rows": 309,
+      "estimate": 46.44157812602155,
+      "lower": 41.49530876417863,
+      "upper": 51.38784748786446,
+      "confidence": 0.9,
+      "suppressed": false,
+      "suppression_reason": null
+    },
+    {
+      "code": "23",
+      "category": "Electrical wiring / panels",
+      "vintage": "pre_1980",
+      "household_rows": 13672,
+      "event_rows": 879,
+      "estimate": 62.289574262406866,
+      "lower": 58.37301059084944,
+      "upper": 66.2061379339643,
+      "confidence": 0.9,
+      "suppressed": false,
+      "suppression_reason": null
+    },
+    {
+      "code": "23",
+      "category": "Electrical wiring / panels",
+      "vintage": "1980_1999",
+      "household_rows": 7608,
+      "event_rows": 382,
+      "estimate": 50.477281814237394,
+      "lower": 45.34074640745,
+      "upper": 55.61381722102479,
+      "confidence": 0.9,
+      "suppressed": false,
+      "suppression_reason": null
+    },
+    {
+      "code": "23",
+      "category": "Electrical wiring / panels",
+      "vintage": "2000_or_later",
+      "household_rows": 6912,
+      "event_rows": 236,
+      "estimate": 34.05832021120495,
+      "lower": 29.54902823999143,
+      "upper": 38.56761218241847,
+      "confidence": 0.9,
+      "suppressed": false,
+      "suppression_reason": null
+    },
+    {
+      "code": "26",
+      "category": "Central A/C",
+      "vintage": "pre_1980",
+      "household_rows": 13672,
+      "event_rows": 819,
+      "estimate": 56.878388757668745,
+      "lower": 53.66430345405697,
+      "upper": 60.09247406128052,
+      "confidence": 0.9,
+      "suppressed": false,
+      "suppression_reason": null
+    },
+    {
+      "code": "26",
+      "category": "Central A/C",
+      "vintage": "1980_1999",
+      "household_rows": 7608,
+      "event_rows": 700,
+      "estimate": 89.99666786949196,
+      "lower": 83.37608874518352,
+      "upper": 96.61724699380039,
+      "confidence": 0.9,
+      "suppressed": false,
+      "suppression_reason": null
+    },
+    {
+      "code": "26",
+      "category": "Central A/C",
+      "vintage": "2000_or_later",
+      "household_rows": 6912,
+      "event_rows": 531,
+      "estimate": 71.71744184483985,
+      "lower": 65.94927495280544,
+      "upper": 77.48560873687427,
+      "confidence": 0.9,
+      "suppressed": false,
+      "suppression_reason": null
+    },
+    {
+      "code": "27",
+      "category": "Built-in heating",
+      "vintage": "pre_1980",
+      "household_rows": 13672,
+      "event_rows": 862,
+      "estimate": 60.036461391578726,
+      "lower": 56.638013995606926,
+      "upper": 63.434908787550526,
+      "confidence": 0.9,
+      "suppressed": false,
+      "suppression_reason": null
+    },
+    {
+      "code": "27",
+      "category": "Built-in heating",
+      "vintage": "1980_1999",
+      "household_rows": 7608,
+      "event_rows": 547,
+      "estimate": 69.3087824754217,
+      "lower": 63.67017403786528,
+      "upper": 74.94739091297811,
+      "confidence": 0.9,
+      "suppressed": false,
+      "suppression_reason": null
+    },
+    {
+      "code": "27",
+      "category": "Built-in heating",
+      "vintage": "2000_or_later",
+      "household_rows": 6912,
+      "event_rows": 355,
+      "estimate": 48.930618859371506,
+      "lower": 44.45999864410328,
+      "upper": 53.40123907463973,
+      "confidence": 0.9,
+      "suppressed": false,
+      "suppression_reason": null
+    },
+    {
+      "code": "28",
+      "category": "Septic tanks",
+      "vintage": "pre_1980",
+      "household_rows": 13672,
+      "event_rows": 74,
+      "estimate": 6.747923028791396,
+      "lower": 5.42228638841315,
+      "upper": 8.073559669169642,
+      "confidence": 0.9,
+      "suppressed": false,
+      "suppression_reason": null
+    },
+    {
+      "code": "28",
+      "category": "Septic tanks",
+      "vintage": "1980_1999",
+      "household_rows": 7608,
+      "event_rows": 34,
+      "estimate": 5.084836587858646,
+      "lower": 3.5612686908667843,
+      "upper": 6.608404484850508,
+      "confidence": 0.9,
+      "suppressed": false,
+      "suppression_reason": null
+    },
+    {
+      "code": "28",
+      "category": "Septic tanks",
+      "vintage": "2000_or_later",
+      "household_rows": 6912,
+      "event_rows": null,
+      "estimate": null,
+      "lower": null,
+      "upper": null,
+      "confidence": 0.9,
+      "suppressed": true,
+      "suppression_reason": "Prespecified minimum 100 homes / 30 events not met"
+    },
+    {
+      "code": "29",
+      "category": "Water heaters",
+      "vintage": "pre_1980",
+      "household_rows": 13672,
+      "event_rows": 909,
+      "estimate": 61.387329772084,
+      "lower": 57.73359192082892,
+      "upper": 65.04106762333907,
+      "confidence": 0.9,
+      "suppressed": false,
+      "suppression_reason": null
+    },
+    {
+      "code": "29",
+      "category": "Water heaters",
+      "vintage": "1980_1999",
+      "household_rows": 7608,
+      "event_rows": 523,
+      "estimate": 61.74865270489122,
+      "lower": 56.01993988785916,
+      "upper": 67.47736552192328,
+      "confidence": 0.9,
+      "suppressed": false,
+      "suppression_reason": null
+    },
+    {
+      "code": "29",
+      "category": "Water heaters",
+      "vintage": "2000_or_later",
+      "household_rows": 6912,
+      "event_rows": 415,
+      "estimate": 52.67852417133967,
+      "lower": 47.720270523987864,
+      "upper": 57.63677781869147,
+      "confidence": 0.9,
+      "suppressed": false,
+      "suppression_reason": null
+    }
+  ],
+  "adjusted": [
+    {
+      "code": "20",
+      "category": "Insulation",
+      "vintage": "1980_1999",
+      "reference": "pre_1980",
+      "estimate": -7.442115745687904,
+      "lower": -10.691534368651462,
+      "upper": -4.192697122724345,
+      "confidence": 0.9,
+      "suppressed": false,
+      "adjustment": "Descriptive weighted linear probability; income bands and Census division",
+      "causal": false
+    },
+    {
+      "code": "20",
+      "category": "Insulation",
+      "vintage": "2000_or_later",
+      "reference": "pre_1980",
+      "estimate": -15.11294958542253,
+      "lower": -18.565121868878578,
+      "upper": -11.660777301966483,
+      "confidence": 0.9,
+      "suppressed": false,
+      "adjustment": "Descriptive weighted linear probability; income bands and Census division",
+      "causal": false
+    },
+    {
+      "code": "21",
+      "category": "Interior water pipes",
+      "vintage": "1980_1999",
+      "reference": "pre_1980",
+      "estimate": -8.313976061515504,
+      "lower": -12.430728677208677,
+      "upper": -4.197223445822332,
+      "confidence": 0.9,
+      "suppressed": false,
+      "adjustment": "Descriptive weighted linear probability; income bands and Census division",
+      "causal": false
+    },
+    {
+      "code": "21",
+      "category": "Interior water pipes",
+      "vintage": "2000_or_later",
+      "reference": "pre_1980",
+      "estimate": -23.59168337001971,
+      "lower": -27.986907465892447,
+      "upper": -19.19645927414697,
+      "confidence": 0.9,
+      "suppressed": false,
+      "adjustment": "Descriptive weighted linear probability; income bands and Census division",
+      "causal": false
+    },
+    {
+      "code": "22",
+      "category": "Plumbing fixtures",
+      "vintage": "1980_1999",
+      "reference": "pre_1980",
+      "estimate": -7.770595947511893,
+      "lower": -14.159213526933966,
+      "upper": -1.38197836808982,
+      "confidence": 0.9,
+      "suppressed": false,
+      "adjustment": "Descriptive weighted linear probability; income bands and Census division",
+      "causal": false
+    },
+    {
+      "code": "22",
+      "category": "Plumbing fixtures",
+      "vintage": "2000_or_later",
+      "reference": "pre_1980",
+      "estimate": -24.141757383168546,
+      "lower": -29.89492405521184,
+      "upper": -18.388590711125254,
+      "confidence": 0.9,
+      "suppressed": false,
+      "adjustment": "Descriptive weighted linear probability; income bands and Census division",
+      "causal": false
+    },
+    {
+      "code": "23",
+      "category": "Electrical wiring / panels",
+      "vintage": "1980_1999",
+      "reference": "pre_1980",
+      "estimate": -14.137587558487759,
+      "lower": -19.692460933923677,
+      "upper": -8.582714183051841,
+      "confidence": 0.9,
+      "suppressed": false,
+      "adjustment": "Descriptive weighted linear probability; income bands and Census division",
+      "causal": false
+    },
+    {
+      "code": "23",
+      "category": "Electrical wiring / panels",
+      "vintage": "2000_or_later",
+      "reference": "pre_1980",
+      "estimate": -34.641437719423955,
+      "lower": -41.3798251315098,
+      "upper": -27.903050307338113,
+      "confidence": 0.9,
+      "suppressed": false,
+      "adjustment": "Descriptive weighted linear probability; income bands and Census division",
+      "causal": false
+    },
+    {
+      "code": "26",
+      "category": "Central A/C",
+      "vintage": "1980_1999",
+      "reference": "pre_1980",
+      "estimate": 27.13594750187168,
+      "lower": 20.06260330697706,
+      "upper": 34.2092916967663,
+      "confidence": 0.9,
+      "suppressed": false,
+      "adjustment": "Descriptive weighted linear probability; income bands and Census division",
+      "causal": false
+    },
+    {
+      "code": "26",
+      "category": "Central A/C",
+      "vintage": "2000_or_later",
+      "reference": "pre_1980",
+      "estimate": 3.0053851763393937,
+      "lower": -3.7906577791529146,
+      "upper": 9.801428131831702,
+      "confidence": 0.9,
+      "suppressed": false,
+      "adjustment": "Descriptive weighted linear probability; income bands and Census division",
+      "causal": false
+    },
+    {
+      "code": "27",
+      "category": "Built-in heating",
+      "vintage": "1980_1999",
+      "reference": "pre_1980",
+      "estimate": 11.297506731162562,
+      "lower": 4.63952046294152,
+      "upper": 17.955492999383605,
+      "confidence": 0.9,
+      "suppressed": false,
+      "adjustment": "Descriptive weighted linear probability; income bands and Census division",
+      "causal": false
+    },
+    {
+      "code": "27",
+      "category": "Built-in heating",
+      "vintage": "2000_or_later",
+      "reference": "pre_1980",
+      "estimate": -10.282934990260355,
+      "lower": -16.33177036223883,
+      "upper": -4.234099618281878,
+      "confidence": 0.9,
+      "suppressed": false,
+      "adjustment": "Descriptive weighted linear probability; income bands and Census division",
+      "causal": false
+    },
+    {
+      "code": "28",
+      "category": "Septic tanks",
+      "vintage": "1980_1999",
+      "reference": "pre_1980",
+      "estimate": -1.8277747439606566,
+      "lower": -3.6860290419513095,
+      "upper": 0.030479554029996248,
+      "confidence": 0.9,
+      "suppressed": false,
+      "adjustment": "Descriptive weighted linear probability; income bands and Census division",
+      "causal": false
+    },
+    {
+      "code": "28",
+      "category": "Septic tanks",
+      "vintage": "2000_or_later",
+      "reference": "pre_1980",
+      "estimate": null,
+      "lower": null,
+      "upper": null,
+      "confidence": 0.9,
+      "suppressed": true,
+      "adjustment": "Descriptive weighted linear probability; income bands and Census division",
+      "causal": false
+    },
+    {
+      "code": "29",
+      "category": "Water heaters",
+      "vintage": "1980_1999",
+      "reference": "pre_1980",
+      "estimate": -1.5816185500813382,
+      "lower": -8.667087139607773,
+      "upper": 5.503850039445096,
+      "confidence": 0.9,
+      "suppressed": false,
+      "adjustment": "Descriptive weighted linear probability; income bands and Census division",
+      "causal": false
+    },
+    {
+      "code": "29",
+      "category": "Water heaters",
+      "vintage": "2000_or_later",
+      "reference": "pre_1980",
+      "estimate": -13.3442444079312,
+      "lower": -20.509649254964174,
+      "upper": -6.178839560898227,
+      "confidence": 0.9,
+      "suppressed": false,
+      "adjustment": "Descriptive weighted linear probability; income bands and Census division",
+      "causal": false
+    }
+  ],
+  "rawIdentifiersIncluded": false,
+  "clientObservations": 0,
+  "causalClaimsAllowed": false,
+  "sourceLimit": "The actual archival edition is pinned and reconciles with Census 2023 PUF controls. Original Census-origin binary equality is not independently established.",
+  "disclosure": "Prepared with Codex. Company-authored original secondary analysis; no independent or human review claim."
+}
