@@ -1,0 +1,30 @@
+cff-version: "1.2.0"
+message: >-
+  Cite the Lonta report for its original comparisons and figures, and separately
+  cite Census/HUD and the DataLumos archival edition for the underlying survey.
+  See CITATION.md for definitions, rights and Codex disclosure.
+title: "Lonta Home-Service Demand Study: reproducible analysis source"
+type: software
+authors:
+  - name: "Lonta AI"
+    website: "https://lonta.io/"
+repository-code: "https://github.com/artemsedin74/lonta-home-service-demand"
+url: "https://lonta.io/research/home-service-demand/"
+license: MIT
+abstract: >-
+  Company-authored, Codex-assisted secondary analysis of the 2023 American
+  Housing Survey using DataLumos 217661/V2. This repository contains original
+  analysis code, masked aggregate exports and figures, without raw survey rows.
+  Original Lonta aggregates, figures, commentary and worksheets are CC BY 4.0;
+  the underlying survey retains separate rights and access terms. This is not
+  peer-reviewed research, client observations or a causal advertising study.
+preferred-citation:
+  type: report
+  authors:
+    - name: "Lonta AI"
+  title: "Home-Service Demand Study: home age, professional work and spending"
+  version: "1.0"
+  year: 2026
+  month: 10
+  date-published: "2026-10-12"
+  url: "https://lonta.io/research/home-service-demand/"
