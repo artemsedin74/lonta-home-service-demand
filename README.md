@@ -51,6 +51,12 @@ Home vintage is not equipment age. Equipment stock, housing type, exposure time,
 metro and other factors are not controlled; group associations do not identify causes.
 Do not infer local leads, current prices, revenue, profit or an advertising budget.
 
+## Related work
+
+See [RELATED-WORK.md](RELATED-WORK.md) for existing Census/JCHS analyses, what this
+companion adds and why similarly named statistics are not automatically comparable.
+No discovery-first or independent-review claim is made.
+
 ## Citation and rights
 Lonta AI (2026). Home-Service Demand Study: home age, professional work and spending.
 Version 1.0. Analysis of the 2023 AHS using DataLumos 217661/V2.
