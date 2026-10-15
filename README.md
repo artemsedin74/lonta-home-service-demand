@@ -78,3 +78,9 @@ receipts; rerun the full driver yourself after obtaining the exact cited archive
 The inputs require their own access and terms. MIT applies to Lonta code; original
 aggregates/figures/commentary/worksheet are CC BY 4.0; original source rights remain
 separate. No raw data download or website submission occurs in the offline tests.
+
+## A separate local planning aid
+
+The [blank service-mix and technician-capacity workbook](tools/lonta-service-mix-v1.xlsx) uses the owner's entered net collections, variable costs and all-in technician-hours for up to six service lines. It flags missing inputs and compares planned work with one qualified team pool. It contains a separate invented worked example and starts with blank inputs. National survey figures do not populate the plan.
+
+This original Lonta worksheet is CC BY 4.0, prepared with OpenAI Codex. Contribution is before fixed overhead, taxes and marketing, not profit. It is not a demand forecast or advertising-budget recommendation. The authoring engine passed 41 calculation mutation checks, and the exported package passed blank-input/formula/validation checks; native Excel recalculation was not performed. The research dataset remains version 1.0.

@@ -1,12 +1,14 @@
 # Editorial assets for the Home-Service Demand Study
 
-[Download the editorial kit ZIP](https://github.com/artemsedin74/lonta-home-service-demand/releases/download/editorial-kit-v1/lonta-home-service-demand-editorial-kit-v1.zip)
+[Download the editorial kit ZIP](https://github.com/artemsedin74/lonta-home-service-demand/releases/download/editorial-kit-v1/lonta-home-service-demand-editorial-kit-v1.1.zip)
 or [read the release notes](https://github.com/artemsedin74/lonta-home-service-demand/releases/tag/editorial-kit-v1).
 
 Three reporting angles, four figures and the underlying aggregate tables from
 [Lonta AI's Home-Service Demand Study](https://lonta.io/research/home-service-demand/).
 Prepared October 15, 2026. The research remains version 1.0; this kit adds reuse
 instructions and claim-to-source references, not new survey results.
+
+For a quick read, use the [two-page editor brief](lonta-home-service-demand-editor-brief-v1.pdf). [EMBEDS.md](EMBEDS.md) provides copyable image/caption HTML with source context. Version 1.1 adds these materials and a separate blank capacity workbook; the original v1 ZIP is retained unchanged. The four `embed-*.html` files preview with local images after unpacking, without a hotlink dependency.
 
 Start with [SOURCE-BRIEF.md](SOURCE-BRIEF.md). Choose one finding that answers your
 readers' question. [CAPTIONS.md](CAPTIONS.md) supplies a caption, alt text and data
