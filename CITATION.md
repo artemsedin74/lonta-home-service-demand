@@ -3,6 +3,11 @@
 Lonta AI (2026). *Home-Service Demand Study: home age, professional work and spending*.
 Version 1.0. Canonical report: https://lonta.io/research/home-service-demand/
 
+For reference managers, use [CITATION.bib](CITATION.bib). The
+[CITATION.cff](CITATION.cff) file provides machine-readable metadata with this
+company-published report as the preferred citation. The plain citation above
+and the BibTeX file also work when GitHub's citation popup is unavailable.
+
 Original secondary analysis by Lonta AI, prepared with OpenAI Codex. The source
 copy used is DataLumos 217661/V2: https://doi.org/10.3886/E217661V2. Credit Census/HUD
 for the 2023 American Housing Survey, ICPSR/DataLumos for that archival edition,
